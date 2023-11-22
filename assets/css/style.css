@@ -1,0 +1,11 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
+
+:root {
+    --color-orange: #FF765A;
+    --color-green-black: #213D49;
+    --color-beage: #FCF5ED;
+    --color-brown: #D8B28E;
+    --color-yellow: #F8BE71;
+    --color-green: #59BB88;
+}
