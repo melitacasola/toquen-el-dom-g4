@@ -26,6 +26,7 @@ body {
     background-color: var(--color-beage);
 }
 
+
 header {
     background-color: var(--color-yellow);
     padding: 10px;
@@ -33,33 +34,38 @@ header {
     align-items: center;
     justify-content: space-between;
 }
-
-.logo img {
-    max-height: 50px; /* Ajusta el tamaño según sea necesario */
+.logo {
+    margin-left: 50px;
 }
-
+.logo img {
+    max-height: 70px; 
+}
 nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
 }
-
 nav ul li {
-    margin-right: 15px;
+    margin-right: 30px;
 }
-
-nav ul li a {
-    
-    color:var(--color-green-black);
-    padding: 12px;
-    background-color:var(--color-beage);
-    border-radius: 15px;
+.navHeader1{
+    margin-right: 2.5em;
+    color: var(--color-green-black);
+    padding: 0.3em 1em;
+    background-color: var(--color-beage);
+    border-radius: 20px;
     transition: background-color 0.3s ease;
-}
-
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+} 
+.navHeader{
+    color: var(--color-green-black);
+    padding: 0.3em 1em;
+    background-color: var(--color-beage);
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+} 
 nav ul li a:hover {
-    background-color: var(--color-brown); 
+    background-color: var(--color-brown);
 }
 
 /* PÁGINA HOME */
