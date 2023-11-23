@@ -70,25 +70,44 @@ nav ul li a:hover {
 
 /* PÁGINA HOME */
 .hm-image img{
-    height: 200px;
+    max-height: 270px;
 }
-
 .hm-descriptivo {
     display: flex;
+    justify-content: space-evenly;
+    padding: 3rem;
 }
+
+.hm-texto {
+    width: 30rem;
+    font-family: 'Solway', sans-serif;
+}
+
+.hm-texto h1{
+    font-family: 'Oliver', sans-serif;
+    font-size: 50px;
+}
+
+.hm-texto h2 {
+    font-family: 'Oliver', sans-serif;
+    font-size: 13px;
+    padding-left: 2rem;
+}
+
+.hm-texto p{
+    text-align: justify;
+    margin-top: 2rem;
+}
+
 /* página construcción */
 .construction-main {
     text-align: center;
     padding: 5rem;
 }
 .construction-image img {
-    max-width: 15rem;
+    max-width: rem;
     padding-bottom: 4rem;
 }
-
-.construction-text p{
-}
-
 .construction-desc i{
     font-size: 2rem;
 }
