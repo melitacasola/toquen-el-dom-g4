@@ -28,9 +28,9 @@ body {
 ol, ul {
 	list-style: none;
 }
-a{
+/* a{
 	text-decoration: none;
-}
+} */
 blockquote, q {
 	quotes: none;
 }
