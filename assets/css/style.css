@@ -20,3 +20,40 @@
 	text-decoration: none;
 	background-color: var(--color-beage);
 }
+
+
+header {
+    background-color: var(--color-yellow);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    max-height: 50px; /* Ajusta el tamaño según sea necesario */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li a {
+    
+    color:var(--color-green-black);
+    padding: 12px;
+    background-color:var(--color-beage);
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: var(--color-brown); 
+}
