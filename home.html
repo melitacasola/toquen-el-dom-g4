@@ -7,59 +7,74 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="icon" href="./assets/img/google-logo.png" type="image/png">
     <link rel="icon" href="./assets/img/google-logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js">
+    </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
-        <div class="logo">
+        <div class="logo-titulo">
+            <div class="logo">
             <a href="./home.html"><img src="./assets/img/LOGO.svg" alt="Toquen el DOM"></a>
+            </div>
+            <div class="titulo-header">
+                <p class="titulo-big">Toquen el DOM</p>
+                <p class="titulo-small">Escuela de música online</p>
+            </div>
         </div>
-        <p></p>
         <nav>
             <ul>
-                
-                <li><a href="./pages/aboutUs.html">Nosotras</a></li>
-                <li><a href="./pages/instrument.html">Flauta</a></li>
-                <li><a href="./pages/construction.html">Guitarra</a></li>
-                <li><a href="./pages/construction.html">Bateria</a></li>
-                <li><a href="./pages/construction.html">Piano</a></li>
+                <li><a class="navHeader1" href="./pages/aboutUs.html">Nosotras</a></li>
+                <li><a class="navHeader" href="./pages/instrument.html">Flauta</a></li>
+                <li><a class="navHeader" href="./pages/construction.html">Guitarra</a></li>
+                <li><a class="navHeader" href="./pages/construction.html">Bateria</a></li>
+                <li><a class="navHeader" href="./pages/construction.html">Piano</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Bienvenido a nuestra Página de Instrumentos</h1>
+        <section class="home-completo">
+            <section class="hm-descriptivo">
+            <!-- cambiar nombre de la clase, ahora no se me ocurre ninguno -->
+                <div class="hm-texto">
+                    <h1>TOQUEN EL DOM</h1>
+                    <h2>Escuela de música online para los mas peques</h2>
+                    <p>¡Descubre el mágico universo de "Toquen el Dom", donde fusionamos la tradición con la tecnología! Nuestra escuela de música fusiona la diversión con el aprendizaje, ofreciendo talleres presenciales y en línea diseñados exclusivamente para niños. Desde la guitarra hasta el piano, desbloqueamos el potencial musical de tus pequeños directamente en nuestro sitio web. La escuela es un espacio dinámico donde los usuarios pueden explorar su pasión por la música. El enfoque lúdico y educativo hará que los más pequeños exploren el fascinante mundo de la música a través de la diversión y un adorable instrumento musical virtual. ¡Inspira su creatividad y forma parte de la sinfonía de talento que creamos juntos!
+                    </p>
+                </div>
+                <aside class="hm-image">
+                    <img src="/assets/img/imagen nena home.png" alt="imagen de una niña tocando la guitarra">
+                </aside>
+            </section>
+        </section>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo dolor diam, sed sodales quam hendrerit non. Vestibulum non lacus enim. Donec eu dolor nec est vehicula volutpat luctus vel mi. In eget dui nec dolor placerat varius. Sed ac erat quis turpis venenatis sagittis. Phasellus at pretium sem. Integer rutrum rutrum quam accumsan imperdiet. Fusce fringilla sodales sem nec eleifend. Nullam ligula massa, dictum vel urna vitae, tempus aliquam massa.</p>
-
-        <p>Integer cursus tincidunt orci, at posuere lorem aliquet et. Nullam ante nibh, venenatis at consectetur ut, placerat sit amet diam. Ut nec congue tellus. Morbi mattis nibh leo, ut maximus turpis ultricies nec. Mauris at odio in erat pulvinar pretium. Integer mollis malesuada neque, quis vehicula est placerat id. Aenean ornare libero felis, vitae laoreet lorem aliquam sit amet. Morbi egestas, quam malesuada condimentum mattis, nulla lacus vehicula velit, et ultrices urna elit sed odio. Sed mollis molestie mi non suscipit. Ut metus augue, accumsan quis leo eget, condimentum ultricies urna.</p>
-
-            
-
+     <section class="carrusel">
         <!-- Carrusel de Imágenes -->
-        <div id="carrusel">
             <!-- Imagen 1 -->
             <div class="slide">
-                <img src="instrumento1.jpg" alt="Instrumento 1">
+                <img src="assets/img/Bateria.png" alt="bateria">
             </div>
             <!-- Imagen 2 -->
             <div class="slide">
-                <img src="instrumento2.jpg" alt="Instrumento 2">
+                <img src="assets/img/Flauta.png" alt="flauta">
             </div>
             <!-- Imagen 3 -->
             <div class="slide">
-                <img src="instrumento3.jpg" alt="Instrumento 3">
+                <img src="assets/img/Guitarra.png" alt="guitarra">
             </div>
             <!-- Imagen 4 -->
             <div class="slide">
-                <img src="instrumento4.jpg" alt="Instrumento 4">
+                <img src="assets/img/Piano.png" alt="piano">
             </div>
-        </div>
+    </section>
     </main>
     <footer>
         <div class="redes-sociales">
-            <a href="https://www.facebook.com/" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
-            <a href="https://twitter.com/" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
-            <a href="https://www.youtube.com/" target="_blank"><img src="youtube-icon.png" alt="Youtube"></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook" alt="Facebook"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter" alt="Twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram" alt="Instagram"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube" alt="Youtube"></i></a>
         </div>
         <div class="terminos-condiciones">
             <p><a href="#">Todos los derechos reservados</a></p>

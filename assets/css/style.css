@@ -1,6 +1,8 @@
 @import url(./reset.css);
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Solway:wght@300;700&display=swap');
 @import url('https://fonts.cdnfonts.com/css/oliver-2');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
 
 :root {
     --color-orange: #FF765A;
@@ -16,6 +18,169 @@
 }
 
 * {
-	
 	text-decoration: none;
+}
+
+body {
+    font-family: 'Solway', sans-serif;
+    background-color: var(--color-beage);
+}
+
+/* HEADER */
+header {
+    background-color: var(--color-yellow);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-titulo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo-big {
+    font-family: 'Oliver', sans-serif;
+    font-size: 1.8rem;
+    margin-left: 0.9rem;
+    margin-top: 1rem;
+}
+.titulo-small {
+    font-family: 'Oliver', sans-serif;
+    font-size: 0.8rem;
+    margin-left: 2rem;
+}
+.logo {
+    margin-left: 50px;
+}
+.logo img {
+    max-height: 70px; 
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li {
+    margin-right: 30px;
+}
+.navHeader1{
+    margin-right: 2.5em;
+    color: var(--color-green-black);
+    padding: 0.3em 1em;
+    background-color: var(--color-beage);
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+} 
+.navHeader{
+    color: var(--color-green-black);
+    padding: 0.3em 1em;
+    background-color: var(--color-beage);
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+} 
+nav ul li a:hover {
+    background-color: var(--color-brown);
+}
+
+/* PÁGINA HOME */
+.hm-image img{
+    max-height: 320px;
+}
+.hm-descriptivo {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3rem;
+}
+
+.hm-texto {
+    width: 45rem;
+    font-family: 'Solway', sans-serif;
+}
+
+.hm-texto h1{
+    font-family: 'Oliver', sans-serif;
+    font-size: 50px;
+}
+
+.hm-texto h2 {
+    font-family: 'Oliver', sans-serif;
+    font-size: 13px;
+    padding-left: 2rem;
+}
+
+.hm-texto p{
+    text-align: justify;
+    margin-top: 2rem;
+}
+
+/* página construcción */
+.construction-main {
+    text-align: center;
+    padding: 5rem;
+}
+.construction-image img {
+    max-width: 20rem;
+g    padding-bottom: 4rem;
+}
+.construction-desc i{
+    font-size: 2rem;
+}
+.construction-text h1{
+    font-family: 'Oliver', sans-serif;
+    font-size: 3rem;
+}
+
+.btn-volver {
+    font-family: 'Solway', sans-serif;
+    background-color: var(--color-green-black);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin: 3rem;
+    text-align: center;
+}
+
+
+/* footer */
+
+footer {
+    background-color: var(--color-yellow);
+    padding: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 10px;
+    font-family: "Space Mono", sans-serif;
+    }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.redes-sociales {
+    margin-left: 2rem;
+}
+.redes-sociales a {
+    margin-left: 0.3rem;
+
+}
+
+.terminos-condiciones {
+    width: 40rem;
+    display: flex;
+    background-color: var(--color-yellow);
+    justify-content: space-around;
+
+}
+
+.contacto {
+    display: flex;
+    margin-right: 2em;
+    width: 12rem;
+    justify-content: space-around;
+
 }
