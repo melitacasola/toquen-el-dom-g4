@@ -26,13 +26,30 @@ body {
     background: var(--color-beage);
 }
 
-
+/* HEADER */
 header {
     background-color: var(--color-yellow);
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.logo-titulo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo-big {
+    font-family: 'Oliver', sans-serif;
+    font-size: 1.8rem;
+    margin-left: 0.9rem;
+    margin-top: 1rem;
+}
+.titulo-small {
+    font-family: 'Oliver', sans-serif;
+    font-size: 0.8rem;
+    margin-left: 2rem;
 }
 .logo {
     margin-left: 50px;
@@ -70,7 +87,7 @@ nav ul li a:hover {
 
 /* PÁGINA HOME */
 .hm-image img{
-    max-height: 270px;
+    max-height: 320px;
 }
 .hm-descriptivo {
     display: flex;
@@ -79,7 +96,7 @@ nav ul li a:hover {
 }
 
 .hm-texto {
-    width: 30rem;
+    width: 45rem;
     font-family: 'Solway', sans-serif;
 }
 
@@ -105,8 +122,8 @@ nav ul li a:hover {
     padding: 5rem;
 }
 .construction-image img {
-    max-width: rem;
-    padding-bottom: 4rem;
+    max-width: 20rem;
+g    padding-bottom: 4rem;
 }
 .construction-desc i{
     font-size: 2rem;
@@ -128,7 +145,6 @@ nav ul li a:hover {
 
 
 /* footer */
-/* COMO HAGO PARA QUE EL FOOTER SE QUEDE SIEMPRE AL FINAL? NO CONSIGO SIN HACER QUE SEA STICKY */
 
 footer {
     background-color: var(--color-yellow);
@@ -138,6 +154,11 @@ footer {
     justify-content: space-between;
     font-size: 10px;
     font-family: "Space Mono", sans-serif;
+    }
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .redes-sociales {
