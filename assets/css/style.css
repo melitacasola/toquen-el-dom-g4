@@ -26,13 +26,30 @@ body {
     background-color: var(--color-beage);
 }
 
-
+/* HEADER */
 header {
     background-color: var(--color-yellow);
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.logo-titulo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo-big {
+    font-family: 'Oliver', sans-serif;
+    font-size: 1.8rem;
+    margin-left: 0.9rem;
+    margin-top: 1rem;
+}
+.titulo-small {
+    font-family: 'Oliver', sans-serif;
+    font-size: 0.8rem;
+    margin-left: 2rem;
 }
 .logo {
     margin-left: 50px;
@@ -137,6 +154,11 @@ footer {
     justify-content: space-between;
     font-size: 10px;
     font-family: "Space Mono", sans-serif;
+    }
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .redes-sociales {
