@@ -70,7 +70,7 @@ nav ul li a:hover {
 
 /* PÁGINA HOME */
 .hm-image img{
-    max-height: 270px;
+    max-height: 320px;
 }
 .hm-descriptivo {
     display: flex;
@@ -79,7 +79,7 @@ nav ul li a:hover {
 }
 
 .hm-texto {
-    width: 30rem;
+    width: 45rem;
     font-family: 'Solway', sans-serif;
 }
 
@@ -128,7 +128,6 @@ nav ul li a:hover {
 
 
 /* footer */
-/* COMO HAGO PARA QUE EL FOOTER SE QUEDE SIEMPRE AL FINAL? NO CONSIGO SIN HACER QUE SEA STICKY */
 
 footer {
     background-color: var(--color-yellow);
