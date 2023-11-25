@@ -117,17 +117,12 @@ nav ul li a:hover {
 }
 
 /* página construcción */
-@media (max-width: 768px){
-
-    
-}
 .construction-main {
     text-align: center;
     padding: 5rem;
 }
 .construction-image img {
     max-width: 20rem;
-    padding-bottom: 4rem;
 }
 .construction-desc i{
     font-size: 2rem;
