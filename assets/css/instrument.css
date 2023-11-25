@@ -1,29 +1,44 @@
-/* @import url(./reset.css); */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Solway:wght@300;700&display=swap');
 @import url('https://fonts.cdnfonts.com/css/oliver-2');
 
+main h1 {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-family: "Oliver";
+    font-size: 3rem;
+}
+
+/* ----------- FLAUTA DE PAN ----------- */
 .panflute-main {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 25rem;
-    background: gray;
 }
 
 .panflute-set {
     position: relative;
     display: flex;
     justify-content: center;
+    background: #f8ebdc;
+    border-radius: 0.5rem;
+
+    margin: 2rem;
+    padding: 1rem;
 }
 
 .panflute {
-    width: 35rem;
+    width: 44rem;
     padding: 1rem;
 }
 
 .panflute-tubes {
     display: flex;
     margin-top: 2rem;
+}
+
+.panflute-tubes li span {
+    display: none;
 }
 
 .panflute-tubes .tube {
@@ -37,10 +52,10 @@
 .panflute-box {
     display: flex;
     justify-content: center;
-    width: 36rem;
+    width: 45rem;
     height: 4.5rem;
 
-    border: 2px solid #d8b28e;
+    border: 2px solid var(--color-brown);
     border-radius: 10px;
     background: radial-gradient(circle farthest-corner at 10% 20%,  #213d49 0%, #000405 90% );
     
@@ -51,3 +66,94 @@
     transform: translate(-50%, -50%);
 }
 
+/* ----------- INFORMACIÓN ADICIONAL ----------- */
+.info {
+    margin-bottom: 4rem;
+}
+.info section{
+    background: white;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 0.5rem;
+
+    padding: 1.5rem 1.5rem 3rem 1.5rem;
+}
+
+/* ----------- INFORMACIÓN INSTRUMENTO ----------- */
+.first-section {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+}
+
+.second-section {
+    display: flex;
+    justify-content: space-around;
+
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.instru-section, .video-section {
+    flex: 1;
+}
+
+/* ----------- VIDEOS RELACIONADOS ----------- */
+.video-section {
+    margin-left: 3rem;
+    display: flex;
+}
+
+.just-videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.just-videos iframe {
+    width: 80%;
+}
+
+.video-button {
+    align-self: flex-start;
+    margin-right: 2.5rem;
+    padding: 0.3rem 1rem;
+    background-color: var(--color-brown);
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+
+    cursor: pointer;
+}
+
+.video-button:hover {
+    background-color: var(--color-beage);
+}
+
+/* ----------- MEDIA QUERIES ----------- */
+@media screen and (max-width: 768px) {
+    .panflute {
+        width: 34rem;
+    }
+
+    .panflute-box {
+        width: 35rem;
+    }
+
+    .second-section {
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 2rem;
+    }
+
+    .video-section {
+        margin-left: 0;
+    }
+
+    .video-button {
+        margin-top: 0.5rem;
+    }
+
+}
