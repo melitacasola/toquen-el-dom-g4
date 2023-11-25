@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log(operacion);
 
             slider.style.transform = `translateX(-${operacion}%)`
-            slider.style.transition = "none";
+            // slider.style.transition = "none";
             return
         }
 
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
             counter = 0;
             operacion = 0;
             slider.style.transform = `translateX(-${operacion}%)`;
-            slider.style.transition = "none";
+            // slider.style.transition = "none";
             return
         }
         counter++
