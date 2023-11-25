@@ -11,6 +11,7 @@
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js">
     </script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header>
@@ -49,25 +50,36 @@
             </section>
         </section>
 
-     <section class="carrusel">
-        <!-- Carrusel de Imágenes -->
-            <!-- Imagen 1 -->
-            <div class="slide">
-                <img src="assets/img/Bateria.png" alt="bateria">
+    <section class="container">
+
+        <div class="carousel-container">
+
+            <div class="carousel-slide" id="slider"> <!-- aca es el doble -->
+                    
+                <section class="carousel-section" data-id="1">
+                    <a href="./pages/instrument.html"><img src="./assets/img/Flauta.png" alt="Flauta" /></a>
+                </section>
+    
+                <section class="carousel-section" data-id="2">
+                    <a href="./pages/construction.html"><img src="./assets/img/Guitarra.png" alt="Guitarra" /></a>
+                </section>
+    
+                <section class="carousel-section" data-id="3">
+                    <a href="./pages/construction.html"><img src="./assets/img/Bateria.png" alt="Bateria" /></a>
+                </section>
+    
+                <section class="carousel-section" data-id="4">
+                    <a href="./pages/construction.html"><img src="./assets/img/Piano.png" alt="Piano" /></a>
+                </section>
+<!-- 
+                <img src="./assets/img/arrow-left.svg" alt="arrow left section img" class="btn-left"/>
+                <img src="assets/img/arrow-right.svg" alt="arrow right section img" class="btn-right"/> -->
             </div>
-            <!-- Imagen 2 -->
-            <div class="slide">
-                <img src="assets/img/Flauta.png" alt="flauta">
-            </div>
-            <!-- Imagen 3 -->
-            <div class="slide">
-                <img src="assets/img/Guitarra.png" alt="guitarra">
-            </div>
-            <!-- Imagen 4 -->
-            <div class="slide">
-                <img src="assets/img/Piano.png" alt="piano">
-            </div>
+            <div class="btn-left"><i class='bx bx-chevron-left'></i></div>
+            <div class="btn-right"><i class='bx bx-chevron-right'></i></div>
+        </div>
     </section>
+    
     </main>
     <footer>
         <div class="redes-sociales">
@@ -84,8 +96,10 @@
         </div>
         <div class="contacto">
             <p><a href="#">Contacto</a></p>
-            <p><a href="#">Correo electrónico</a></p>
+            <p><a href="./pages/construction.html">Correo electrónico</a></p>
         </div>
     </footer>
+
+    <script src="./assets/js/app.js"></script>
 </body>
 </html>
