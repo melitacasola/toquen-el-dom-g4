@@ -120,7 +120,7 @@ nav ul li a:hover {
     font-size: 24px;
 }
 
-/* página construcción */
+/* ---------- página construcción --------------- */
 .construction-main {
     text-align: center;
     padding: 5rem;
@@ -129,7 +129,8 @@ nav ul li a:hover {
     max-width: 20rem;
 }
 .construction-desc i{
-    font-size: 2rem;
+    font-size: 8rem;
+    margin: 3rem 0rem 0.5rem 0rem;
 }
 .construction-text h1{
     font-family: 'Oliver', sans-serif;
