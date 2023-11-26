@@ -86,8 +86,11 @@ nav ul li a:hover {
 }
 
 /* PÁGINA HOME */
+
 .hm-image img{
-    max-height: 320px;
+    max-height: 370px;
+    border: 1px solid #000;
+    padding: 8px;
 }
 .hm-descriptivo {
     display: flex;
@@ -96,24 +99,25 @@ nav ul li a:hover {
 }
 
 .hm-texto {
-    width: 45rem;
+    width: 39rem;
     font-family: 'Solway', sans-serif;
 }
 
 .hm-texto h1{
     font-family: 'Oliver', sans-serif;
-    font-size: 50px;
+    font-size: 70px;
 }
 
 .hm-texto h2 {
     font-family: 'Oliver', sans-serif;
-    font-size: 13px;
+    font-size: 20px;
     padding-left: 2rem;
 }
 
 .hm-texto p{
     text-align: justify;
     margin-top: 2rem;
+    font-size: 24px;
 }
 
 /* página construcción */
