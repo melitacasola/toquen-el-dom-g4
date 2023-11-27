@@ -96,9 +96,10 @@ header {
 /* PÁGINA HOME */
 
 .hmImage img{
-    width: 25rem;
+    width: 30rem;
+    height: 27rem;
     border: 1px solid #000;
-    padding: 20px;
+    /* padding: 20px; */
     margin: 20px;
     flex: 1;
 }
@@ -200,6 +201,49 @@ header {
     background-color: #9dadb4;
     color: aliceblue;
 }
+
+/* ---------- página Sobre Nosotras --------------- */
+
+.hmDescriptive.aboutUs{
+    margin: 3.5rem 3.5rem 0 3.5rem;
+    padding: 2.5rem 2.5rem 0 2.5rem;
+    text-align: center;
+}
+.hmDescriptive.aboutUs h1{
+    font-size: 64px;
+}
+.teachers {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 7rem;
+    padding: 1rem 3.5rem 3.5rem 3.5rem;
+    width: 80%;
+}
+
+.teacher {
+    text-align: center; 
+    /* margin: 10px; */
+    height: 100%;
+}
+
+.teacher p{
+    text-align: start;
+    font-size: 20px;
+    margin: 10px;
+    width: 90%;
+}
+
+.teacher span{
+    font-weight: 700;
+}
+
+.teacher img {
+    /* width: 12rem; */
+    height: 12rem;
+    border-radius: 10%;
+}
+
+
 
 
 
@@ -344,7 +388,6 @@ a {
     }
 
     .hmText p{
-        /* font-size: 20px; */
         margin: 1rem;
     }
 
@@ -358,12 +401,46 @@ a {
         width: 90%;
     }
 
-    /* ------CONSTRUCCION------ */
-    /* .construction-main {
-        width: 100%;
+
+    /* ------SOBRE NOSOTRAS------ */
+    .hmDescriptive.aboutUs{
+        margin: 2.5rem;
+        padding: 2rem;
+        /* position: fixed; */
+    }
+
+    .hmDescriptive.aboutUs h1{
+        font-size: 2.5rem;
+    }
+
+    .teachers{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        margin: 1rem;
+        width: auto;
+    }
+
+    .teacher{
+        margin: 2rem 0;
+        /* padding: 2rem 0; */
         padding: 0;
-        text-align: center;
-    } */
+        align-items: center;
+    }
+
+    .teacher img{
+        height: 20rem;
+    }
+
+    .teacher p{
+        text-align: justify;
+        margin: 1.5rem 0;
+        width: auto;
+    }
+
+
+    /* ------CONSTRUCCION------ */
     .constructionImage img {
         padding-bottom: 0;
         width: 100%;
