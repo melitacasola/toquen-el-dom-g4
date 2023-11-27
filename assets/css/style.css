@@ -309,9 +309,8 @@ a {
     .navList ul li {
         background-color: var(--color-orange);
         padding: 10px;
-        margin:
+}
 
-    }
     .navHeader {
         right: 0;
     }
