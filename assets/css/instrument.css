@@ -3,7 +3,7 @@
 
 main h1 {
     text-align: center;
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
     font-family: "Oliver";
     font-size: 3rem;
 }
@@ -13,7 +13,6 @@ main h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 25rem;
 }
 
 .panflute-set {
@@ -21,7 +20,7 @@ main h1 {
     display: flex;
     justify-content: center;
 
-    margin: 2rem;
+    margin: 1rem;
     padding: 1rem;
 }
 
@@ -32,12 +31,11 @@ main h1 {
 
 .panflute-tubes {
     display: flex;
-    margin-top: 2rem;
 }
 
-
-.panflute-tubes span {
-    display: none;
+.panflute-tubes .tube:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 .panflute-tubes .tube {
@@ -63,7 +61,7 @@ main h1 {
     position: absolute;
 
     left: 50%;
-    top: 27%;
+    top: 22%;
     transform: translate(-50%, -50%);
 }
 
@@ -154,6 +152,12 @@ main h1 {
     margin-left: 3rem;
     margin-right: 3rem;
     margin-bottom: 2rem;
+}
+
+.first-section li::before {
+    content: '• ';
+    width: 0.5rem;
+    margin-left: 0.5rem;
 }
 
 .second-section {
