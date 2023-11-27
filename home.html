@@ -24,11 +24,11 @@
                 <p class="smallTitle">Escuela de música online</p>
             </div>
             <div class="menuBurger">
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars" id="menuBurger"></i>
             </div>
         </div>
         <nav class="navList">
-            <ul>
+            <ul class="menu" id="menu">
                 <li><a class="navHeader1" href="./pages/aboutUs.html">Nosotras</a></li>
                 <li><a class="navHeader" href="./pages/instrument.html">Flauta</a></li>
                 <li><a class="navHeader" href="./pages/construction.html">Guitarra</a></li>
@@ -38,64 +38,67 @@
         </nav>
     </header>
     <main>
-        <section class="mainHome">
-            <section class="hmDescriptive">
+
+        <section class="hmDescriptive">
             <!-- cambiar nombre de la clase, ahora no se me ocurre ninguno -->
-                <div class="hmText">
-                    <h1>TOQUEN EL DOM</h1>
-                    <h2>Escuela de música online para los mas peques</h2>
-                    <p>¡Descubre el mágico universo de "Toquen el Dom", donde fusionamos la tradición con la tecnología! Nuestra escuela de música fusiona la diversión con el aprendizaje, ofreciendo talleres presenciales y en línea diseñados exclusivamente para niños. Desde la guitarra hasta el piano, desbloqueamos el potencial musical de tus pequeños directamente en nuestro sitio web. <br><br>La escuela es un espacio dinámico donde los usuarios pueden explorar su pasión por la música. El enfoque lúdico y educativo hará que los más pequeños exploren el fascinante mundo de la música a través de la diversión y un adorable instrumento musical virtual. ¡Inspira su creatividad y forma parte de la sinfonía de talento que creamos juntos!
-                    </p>
-                </div>
-                <aside class="hmImage">
+            <h1>TOQUEN EL DOM</h1>
+            <h2>Escuela de música online para los mas peques</h2>
+                
+            <div class="hmText">
+                
+                <div class="hmImage">
                     <img src="/assets/img/imagen nena home.png" alt="imagen de una niña tocando la guitarra">
-                </aside>
-            </section>
+                </div>
+                <p>¡Descubre el mágico universo de "Toquen el Dom", donde fusionamos la tradición con la tecnología! Nuestra escuela de música fusiona la diversión con el aprendizaje, ofreciendo talleres presenciales y en línea diseñados exclusivamente para niños. Desde la guitarra hasta el piano, desbloqueamos el potencial musical de tus pequeños directamente en nuestro sitio web. <br><br>La escuela es un espacio dinámico donde los usuarios pueden explorar su pasión por la música. El enfoque lúdico y educativo hará que los más pequeños exploren el fascinante mundo de la música a través de la diversión y un adorable instrumento musical virtual. ¡Inspira su creatividad y forma parte de la sinfonía de talento que creamos juntos!
+                </p>
+            </div>
+                
         </section>
+        
 
 <!-- ... (otros elementos HTML) -->
 
         <section class="container">
-            <div class="carousel-container">
-                <div class="carousel-slide" id="slider">
-                    <section class="carousel-section" data-id="1">
+            <div class="carouselContainer">
+                <div class="carouselSlide" id="slider">
+                    <section class="carouselSection" data-id="1">
                         <a href="./pages/instrument.html"><img src="./assets/img/Flauta.png" alt="Flauta" /></a>
                     </section>
 
-                    <section class="carousel-section" data-id="2">
+                    <section class="carouselSection" data-id="2">
                         <a href="./pages/construction.html"><img src="./assets/img/Guitarra.png" alt="Guitarra" /></a>
                     </section>
 
-                    <section class="carousel-section" data-id="3">
+                    <section class="carouselSection" data-id="3">
                         <a href="./pages/construction.html"><img src="./assets/img/Bateria.png" alt="Bateria" /></a>
                     </section>
 
-                    <section class="carousel-section" data-id="4">
+                    <section class="carouselSection" data-id="4">
                         <a href="./pages/construction.html"><img src="./assets/img/Piano.png" alt="Piano" /></a>
                     </section>
                 </div>
-                <div class="btn-left"><i class='bx bx-chevron-left'></i></div>
-                <div class="btn-right"><i class='bx bx-chevron-right'></i></div>
+                <div class="btnLeft"><i class='bx bx-chevron-left'></i></div>
+                <div class="btnRight"><i class='bx bx-chevron-right'></i></div>
             </div>
         </section>
 
     
     </main>
     <footer>
-        <div class="redes-sociales">
+        <div class="socialNetworks">
             <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook" alt="Facebook"></i></a>
             <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter" alt="Twitter"></i></a>
             <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram" alt="Instagram"></i></a>
             <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube" alt="Youtube"></i></a>
         </div>
-        <div class="terminos-condiciones">
+        <div class="termsConditions">
             <p><a href="#">Todos los derechos reservados ©</a></p>
             <p>|</p>
             <p><a href="#"> Política de privacidad</a></p>
             <p>|</p>
             <p><a href="#">Copyright por FactoriaF5</a></p>
         </div>
-        <div class="contacto">
+        <div class="contact">
             <p><a href="./pages/construction.html">Contacto</a></p>
             <p>|</p>
             <p><a href="#"> Correo electrónico</a></p>

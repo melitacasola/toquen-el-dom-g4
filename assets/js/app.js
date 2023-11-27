@@ -1,14 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const btnLeft = document.querySelector(".btn-left");
-    const btnRight = document.querySelector(".btn-right");
+    const btnLeft = document.querySelector(".btnLeft");
+    const btnRight = document.querySelector(".btnRight");
     const slider = document.querySelector("#slider");
-    const sliderSection = document.querySelectorAll(".carousel-section");
+    const sliderSection = document.querySelectorAll(".carouselSection");
 
     let currentSlide = 1;
     let widthImg = 100 / sliderSection.length;
 
-    btnLeft.addEventListener('click', () => moveSlide(-1));
-    btnRight.addEventListener('click', () => moveSlide(1));
+    if(btnLeft){
+        btnLeft.addEventListener('click', () => moveSlide(-1));
+    }
+    if (btnRight) {
+        btnRight.addEventListener('click', () => moveSlide(1));
+        
+    }
+
 
     function moveSlide(n) {
         showSlide(currentSlide += n);
@@ -28,4 +34,19 @@ document.addEventListener("DOMContentLoaded", function () {
         slider.style.transform = `translateX(${newTransformValue})`;
         slider.style.transition = "all ease .6s";
     }
-});
+
+    /* ----EVENTO MENU DESPLEGABLE------*/
+    const menuIcon = document.getElementById("menuBurger");
+    const menu = document.getElementById("menu");
+
+    menuIcon.addEventListener('click', function () {
+        menu.classList.toggle("show");
+    });
+
+    /*------- Btn Volver a pag principal -----*/
+    const backBtn = document.getElementById("btnBack"); 
+    if(backBtn){
+        backBtn.addEventListener('click', () => window.location.href = '../home.html')
+    }
+    
+})
