@@ -284,7 +284,13 @@ a {
     .menuBurger {
         display: block;
         position: absolute;
-        
+        color: var(--color-beage);
+        font-size: 50px;
+        margin-left: 307px;
+        margin-top: 10px;
+    }
+    .logo img{
+        width: 90%;
     }
     .titleHeader {
         display: none; 
@@ -292,28 +298,31 @@ a {
 
     .navList {
         display: flex;
-        position: absolute;
+        position: fixed;
         flex-direction: column;
         width: 100%;
-        top: 60px;
         justify-content: space-evenly;
         align-items: flex-end;
-        background-color: var(--color-orange);
 
     }
     .navList ul {
         display: block;
         position: absolute;
         top: 40px;
+        
     }
     .navList ul li {
-        background-color: var(--color-orange);
-        padding: 10px;
+        background-color: var(--color-yellow);
+        padding: 30px;
+        font-size: 20px;
 }
 
-    .navHeader {
-        right: 0;
+    .navHeader, .navHeader1 {
+        background-color: var(--color-yellow);
+        text-align: center;
     }
+
+    .menuBurgerNav:checked + .navList
 
     /* ------MAIN------ */
     .hmDescriptive {
