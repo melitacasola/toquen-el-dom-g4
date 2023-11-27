@@ -10,21 +10,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js">
     </script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header>
-        <div class="logo-titulo">
+        <div class="titleLogo">
             <div class="logo">
             <a href="./home.html"><img src="./assets/img/LOGO.svg" alt="Toquen el DOM"></a>
             </div>
-            <div class="titulo-header">
-                <p class="titulo-big">Toquen el DOM</p>
-                <p class="titulo-small">Escuela de música online</p>
+            <div class="titleHeader">
+                <p class="bigTitle">Toquen el DOM</p>
+                <p class="smallTitle">Escuela de música online</p>
+            </div>
+            <div class="menuBurger">
+                <i class="fa-solid fa-bars"></i>
             </div>
         </div>
-        <nav>
+        <nav class="navList">
             <ul>
                 <li><a class="navHeader1" href="./pages/aboutUs.html">Nosotras</a></li>
                 <li><a class="navHeader" href="./pages/instrument.html">Flauta</a></li>
@@ -35,15 +38,16 @@
         </nav>
     </header>
     <main>
-        <section class="home-completo">
-            <section class="hm-descriptivo">
-                <div class="hm-texto">
+        <section class="mainHome">
+            <section class="hmDescriptive">
+            <!-- cambiar nombre de la clase, ahora no se me ocurre ninguno -->
+                <div class="hmText">
                     <h1>TOQUEN EL DOM</h1>
                     <h2>Escuela de música online para los mas peques</h2>
                     <p>¡Descubre el mágico universo de "Toquen el Dom", donde fusionamos la tradición con la tecnología! Nuestra escuela de música fusiona la diversión con el aprendizaje, ofreciendo talleres presenciales y en línea diseñados exclusivamente para niños. Desde la guitarra hasta el piano, desbloqueamos el potencial musical de tus pequeños directamente en nuestro sitio web. <br><br>La escuela es un espacio dinámico donde los usuarios pueden explorar su pasión por la música. El enfoque lúdico y educativo hará que los más pequeños exploren el fascinante mundo de la música a través de la diversión y un adorable instrumento musical virtual. ¡Inspira su creatividad y forma parte de la sinfonía de talento que creamos juntos!
                     </p>
                 </div>
-                <aside class="hm-image">
+                <aside class="hmImage">
                     <img src="/assets/img/imagen nena home.png" alt="imagen de una niña tocando la guitarra">
                 </aside>
             </section>

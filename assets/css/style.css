@@ -35,18 +35,18 @@ header {
     justify-content: space-between;
 }
 
-.logo-titulo {
+.titleLogo {
     display: flex;
     justify-content: space-between;
 }
 
-.titulo-big {
+.bigTitle {
     font-family: 'Oliver', sans-serif;
     font-size: 1.8rem;
     margin-left: 0.9rem;
     margin-top: 1rem;
 }
-.titulo-small {
+.smallTitle {
     font-family: 'Oliver', sans-serif;
     font-size: 0.8rem;
     margin-left: 2rem;
@@ -57,11 +57,15 @@ header {
 .logo img {
     max-height: 70px; 
 }
-nav ul {
+.navList {
     list-style: none;
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly   ;
+}.navList ul {
+    display: flex;
 }
-nav ul li {
+.navList ul li {
     margin-right: 30px;
 }
 .navHeader1{
@@ -80,44 +84,47 @@ nav ul li {
     transition: background-color 0.3s ease;
     
 } 
-nav ul li a:hover {
+.navList ul li a:hover {
     background-color: var(--color-brown);
+}
+
+.menuBurger {
+    display: none;
 }
 
 /* PÁGINA HOME */
 
-.hm-image img{
-    width: 460px;
-    height: 375px;
+.hmImage img{
+    width: 25rem;
     border: 1px solid #000;
-    background: #FCF5ED;
+    /* background: #FCF5ED; */
     padding: 20px;
     margin: 20px
 }
-.hm-descriptivo {
+.hmDescriptive {
     display: flex;
     justify-content: space-evenly;
     padding: 2.5rem;
     align-items: center;
 }
 
-.hm-texto {
+.hmText {
     width: 39rem;
     font-family: 'Solway', sans-serif;
 }
 
-.hm-texto h1{
+.hmText h1{
     font-family: 'Oliver', sans-serif;
     font-size: 86px;
 }
 
-.hm-texto h2 {
+.hmText h2 {
     font-family: 'Oliver', sans-serif;
     font-size: 24px;
     padding-left: 2rem;
 }
 
-.hm-texto p{
+.hmText p{
     text-align: justify;
     margin-top: 2rem;
     font-size: 24px;
@@ -133,8 +140,7 @@ nav ul li a:hover {
 
 .carousel-container {
     position: relative;
-    width: 460px;
-    height: 370px;
+    width: 25rem;
     overflow: hidden;
 }
 
@@ -152,7 +158,7 @@ nav ul li a:hover {
 }
 
 .carousel-section img {
-    width: 450px;
+    width: 25rem;
     height: 100%;
     object-fit: cover;
 }
@@ -257,4 +263,128 @@ a {
     width: 14rem;
     justify-content: space-around;
 
+}
+
+/* --------------------- MEDIA QUERIES ---------------------- */
+@media screen and (max-width: 768px) {
+    /* --------HEADER--------- */
+    .menuBurger {
+        display: block;
+        position: absolute;
+        color: var(--color-beage);
+        font-size: 50px;
+        margin-left: 307px;
+        margin-top: 10px;
+    }
+    .logo img{
+        width: 90%;
+    }
+    .titleHeader {
+        display: none; 
+    }
+
+    .navList {
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: flex-end;
+
+    }
+    .navList ul {
+        display: block;
+        position: absolute;
+        top: 40px;
+        
+    }
+    .navList ul li {
+        background-color: var(--color-yellow);
+        padding: 30px;
+        font-size: 20px;
+}
+
+    .navHeader, .navHeader1 {
+        background-color: var(--color-yellow);
+        text-align: center;
+    }
+
+    .menuBurgerNav:checked + .navList
+
+    /* ------MAIN------ */
+    .hmDescriptive {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .hmText {
+        width: 100%;
+        font-size: 90%;
+        align-items: center;
+    }
+
+    .hmImage img{
+        width: 90%;
+    
+    }
+
+    /* -----CARROUSEL----- */
+    .container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    /* ------CONSTRUCCION------ */
+    /* .construction-main {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    } */
+    .construction-image img {
+        padding-bottom: 0;
+        width: 100%;
+    }
+
+    .piano, .guitarra {
+        display: none;
+    }
+    .construction-desc {
+        margin: 0;
+    }
+
+    .construction-desc i{
+        font-size: 40px;
+    }
+    .construction-text {
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+
+    }
+    .construction-text h1 {
+        font-size: 2rem;
+    }
+
+    .btn-volver {
+        padding: 0.3rem;
+        border-radius: 20px;
+        margin: 3rem;
+    }
+
+
+    /* ------FOOTER------ */
+    .redes-sociales i{
+        font-size: 15px;
+
+    }
+    .terminos-condiciones {
+        display: none;
+    }
+
+    .contacto {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 0;
+    }
 }
