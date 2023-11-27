@@ -1,62 +1,52 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const btnLeft = document.querySelector(".btn-left"),
-        btnRigth = document.querySelector(".btn-right"),
-        slider = document.querySelector("#slider"),
-        sliderSection = document.querySelectorAll(".carousel-section");
+    const btnLeft = document.querySelector(".btnLeft");
+    const btnRight = document.querySelector(".btnRight");
+    const slider = document.querySelector("#slider");
+    const sliderSection = document.querySelectorAll(".carouselSection");
 
+    let currentSlide = 1;
+    let widthImg = 100 / sliderSection.length;
 
-    btnLeft.addEventListener('click', moveToLeft)
-    btnRigth.addEventListener('click', moveToRight)
-    
-    //variables para mover los % de ubicacion en el CSS
-    let operacion = 0,
-        counter = 0,
-        widthImg = 100 / sliderSection.length;
-
-    console.log(`ctas img tengo?? ${sliderSection.length-1}`);
-    
-    console.log(counter);
-
-    function moveToLeft() {
-        counter--;
-        if(counter < 0){
-            console.log(counter);
-            counter = sliderSection.length -1;
-            console.log(counter);
-
-            console.log(operacion);
-            operacion = widthImg * (sliderSection.length-1)
-            console.log(operacion);
-
-            slider.style.transform = `translateX(-${operacion}%)`
-            // slider.style.transition = "none";
-            return
-        }
-
-
-        operacion -= widthImg;
-        console.log(operacion);
-        slider.style.transform = `translateX(-${operacion}%)`
-        slider.style.transition = "all ease .6s"
-    }  
-    
-    
-    function moveToRight() {
-        if(counter >= sliderSection.length-1){
-            counter = 0;
-            operacion = 0;
-            slider.style.transform = `translateX(-${operacion}%)`;
-            // slider.style.transition = "none";
-            return
-        }
-        counter++
-        console.log(counter);
-
-        operacion += widthImg;
-        // console.log(operacion);
-        slider.style.transform = `translateX(-${operacion}%)`
-        slider.style.transition = "all ease .6s"
+    if(btnLeft){
+        btnLeft.addEventListener('click', () => moveSlide(-1));
+    }
+    if (btnRight) {
+        btnRight.addEventListener('click', () => moveSlide(1));
+        
     }
 
 
-});
+    function moveSlide(n) {
+        showSlide(currentSlide += n);
+    }
+
+    function showSlide(n) {
+        if (n > sliderSection.length) {
+        currentSlide = 1;
+        }
+
+        if (n < 1) {
+        currentSlide = sliderSection.length;
+        }
+
+        let newTransformValue = -(widthImg * (currentSlide - 1)) + '%';
+    
+        slider.style.transform = `translateX(${newTransformValue})`;
+        slider.style.transition = "all ease .6s";
+    }
+
+    /* ----EVENTO MENU DESPLEGABLE------*/
+    const menuIcon = document.getElementById("menuBurger");
+    const menu = document.getElementById("menu");
+
+    menuIcon.addEventListener('click', function () {
+        menu.classList.toggle("show");
+    });
+
+    /*------- Btn Volver a pag principal -----*/
+    const backBtn = document.getElementById("btnBack"); 
+    if(backBtn){
+        backBtn.addEventListener('click', () => window.location.href = '../home.html')
+    }
+    
+})

@@ -62,7 +62,8 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly   ;
-}.navList ul {
+}
+.menu{
     display: flex;
 }
 .navList ul li {
@@ -75,7 +76,6 @@ header {
     background-color: var(--color-beage);
     border-radius: 20px;
     transition: background-color 0.3s ease;
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25); */
 } 
 .navHeader{
     color: var(--color-green-black);
@@ -83,7 +83,7 @@ header {
     background-color: var(--color-beage);
     border-radius: 20px;
     transition: background-color 0.3s ease;
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25); */
+    
 } 
 .navList ul li a:hover {
     background-color: var(--color-brown);
@@ -96,41 +96,51 @@ header {
 /* PÁGINA HOME */
 
 .hmImage img{
-    width: 25rem;
+    width: 30rem;
+    height: 27rem;
     border: 1px solid #000;
-    /* background: #FCF5ED; */
-    padding: 20px;
-    margin: 20px
+    /* padding: 20px; */
+    margin: 20px;
+    flex: 1;
 }
+
 .hmDescriptive {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 2.5rem;
-    align-items: center;
-}
-
-.hmText {
-    width: 39rem;
+    /* width: 39rem; */
     font-family: 'Solway', sans-serif;
+    flex: 1;
+    padding: 2rem;
+    width: auto;
+    
 }
 
-.hmText h1{
+.hmDescriptive h1{
     font-family: 'Oliver', sans-serif;
     font-size: 86px;
+    flex: 1;
 }
 
-.hmText h2 {
+.hmDescriptive h2 {
     font-family: 'Oliver', sans-serif;
     font-size: 24px;
     padding-left: 2rem;
+    flex: 1;
 }
 
-.hmText p{
+.hmDescriptive p{
     text-align: justify;
-    margin-top: 2rem;
+    margin: 2rem;
     font-size: 24px;
+    flex: 1;
 }
-
+.hmText {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 2rem; */
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    
+}
 /* carrusel*/
 .container{
     display: flex;
@@ -139,46 +149,33 @@ header {
     padding: 20px;
 }
 
-.carousel-container {
-    /* position: relative;
-    overflow: hidden;
-    width: 90%;
-    min-width: 100vh;
-    max-width: 1200px;
-    margin: 0 auto;
- */
+.carouselContainer {
     position: relative;
     width: 25rem;
-    /* height: 370px; */
     overflow: hidden;
-    
-
-    
 }
 
-.carousel-slide {
+.carouselSlide {
     width: 400%;
     height: 100%;
     display: flex;
-    transform: translateX(-75%);
-    
 }
 
-.carousel-section{
+.carouselSection{
     width: calc(100% /4);
     height: 100%;
 
 }
 
-.carousel-section img {
+.carouselSection img {
     width: 25rem;
     height: 100%;
     object-fit: cover;
 }
 
 
-.btn-left,
-.btn-right{
+.btnLeft,
+.btnRight{
     display: flex;
     position: absolute;
     top: 50%;
@@ -192,40 +189,83 @@ header {
     user-select: none;
 }
 
-.btn-left{
+.btnLeft{
     left: 10px;
 }
-.btn-right{
+.btnRight{
     right: 10px;
 }
 
-.btn-left:hover,
-.btn-right:hover{
+.btnLeft:hover,
+.btnRight:hover{
     background-color: #9dadb4;
     color: aliceblue;
 }
 
+/* ---------- página Sobre Nosotras --------------- */
+
+.hmDescriptive.aboutUs{
+    margin: 3.5rem 3.5rem 0 3.5rem;
+    padding: 2.5rem 2.5rem 0 2.5rem;
+    text-align: center;
+}
+.hmDescriptive.aboutUs h1{
+    font-size: 64px;
+}
+.teachers {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 7rem;
+    padding: 1rem 3.5rem 3.5rem 3.5rem;
+    width: 80%;
+}
+
+.teacher {
+    text-align: center; 
+    /* margin: 10px; */
+    height: 100%;
+}
+
+.teacher p{
+    text-align: start;
+    font-size: 20px;
+    margin: 10px;
+    width: 90%;
+}
+
+.teacher span{
+    font-weight: 700;
+}
+
+.teacher img {
+    /* width: 12rem; */
+    height: 12rem;
+    border-radius: 10%;
+}
+
+
+
 
 
 /* ---------- página construcción --------------- */
-.construction-main {
+.constructionMain {
     text-align: center;
     padding: 5rem;
 }
-.construction-image img {
+.constructionImage img {
     max-width: 20rem;
     padding-bottom: 4rem;
 }
-.construction-desc i{
+.constructionDesc i{
     font-size: 8rem;
     margin: 3rem 0rem 0.5rem 0rem;
 }
-.construction-text h1{
+.constructionText h1{
     font-family: 'Oliver', sans-serif;
     font-size: 3rem;
 }
 
-.btn-volver {
+.btnBack {
     font-family: 'Solway', sans-serif;
     background-color: var(--color-green-black);
     color: white;
@@ -253,16 +293,16 @@ a {
     color: black;
 }
 
-.redes-sociales {
+.socialNetworks {
     margin-left: 2rem;
 }
-.redes-sociales i {
+.socialNetworks i {
         margin-left: 0.3rem;
     font-size: 16px;
 
 }
 
-.terminos-condiciones {
+.termsConditions {
     width: 40rem;
     display: flex;
     background-color: var(--color-yellow);
@@ -270,7 +310,7 @@ a {
 
 }
 
-.contacto {
+.contact {
     display: flex;
     margin-right: 2em;
     width: 14rem;
@@ -281,6 +321,7 @@ a {
 /* --------------------- MEDIA QUERIES ---------------------- */
 @media screen and (max-width: 768px) {
     /* --------HEADER--------- */
+
     .menuBurger {
         display: block;
         position: absolute;
@@ -296,21 +337,21 @@ a {
         display: none; 
     }
 
-    .navList {
-        display: flex;
+    .menu {
+        display: none;
         position: fixed;
         flex-direction: column;
         width: 100%;
         justify-content: space-evenly;
         align-items: flex-end;
-
-    }
-    .navList ul {
-        display: block;
+        top: 80px;
         position: absolute;
-        top: 40px;
-        
     }
+    
+    .menu.show{
+        display: block;
+    }
+    
     .navList ul li {
         background-color: var(--color-yellow);
         padding: 30px;
@@ -325,36 +366,82 @@ a {
     .menuBurgerNav:checked + .navList
 
     /* ------MAIN------ */
-    .hmDescriptive {
+    .hmText {
         display: flex;
         flex-direction: column;
         width: 80%;
+        padding: 2rem;
+        
+
     }
 
-    .hmText {
-        width: 100%;
+    .hmDescriptive {
         font-size: 90%;
-        align-items: center;
+    }
+
+    .hmDescriptive h1{
+        font-size: 50px;
+    }
+    .hmDescriptive h2{
+        font-size: 18px;
+        padding: 1.5rem 0;
+    }
+
+    .hmText p{
+        margin: 1rem;
     }
 
     .hmImage img{
         width: 90%;
-    
+        margin: 20px 0;
     }
 
     /* -----CARROUSEL----- */
     .container {
         width: 90%;
-        padding: 30px;
     }
 
-    /* ------CONSTRUCCION------ */
-    /* .construction-main {
-        width: 100%;
+
+    /* ------SOBRE NOSOTRAS------ */
+    .hmDescriptive.aboutUs{
+        margin: 2.5rem;
+        padding: 2rem;
+        /* position: fixed; */
+    }
+
+    .hmDescriptive.aboutUs h1{
+        font-size: 2.5rem;
+    }
+
+    .teachers{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        margin: 1rem;
+        width: auto;
+    }
+
+    .teacher{
+        margin: 2rem 0;
+        /* padding: 2rem 0; */
         padding: 0;
-        text-align: center;
-    } */
-    .construction-image img {
+        align-items: center;
+    }
+
+    .teacher img{
+        height: 20rem;
+    }
+
+    .teacher p{
+        text-align: justify;
+        margin: 1.5rem 0;
+        width: auto;
+    }
+
+
+    /* ------CONSTRUCCION------ */
+    .constructionImage img {
         padding-bottom: 0;
         width: 100%;
     }
@@ -362,24 +449,24 @@ a {
     .piano, .guitarra {
         display: none;
     }
-    .construction-desc {
+    .constructionDesc {
         margin: 0;
     }
 
-    .construction-desc i{
+    .constructionDesc i{
         font-size: 40px;
     }
-    .construction-text {
+    .constructionText {
     font-size: 1rem;
     width: 100%;
     text-align: center;
 
     }
-    .construction-text h1 {
+    .constructionText h1 {
         font-size: 2rem;
     }
 
-    .btn-volver {
+    .btnBack {
         padding: 0.3rem;
         border-radius: 20px;
         margin: 3rem;
@@ -387,15 +474,15 @@ a {
 
 
     /* ------FOOTER------ */
-    .redes-sociales i{
+    .socialNetworks i{
         font-size: 15px;
 
     }
-    .terminos-condiciones {
+    .termsConditions {
         display: none;
     }
 
-    .contacto {
+    .contact {
         display: flex;
         justify-content: space-between;
         margin-right: 0;
