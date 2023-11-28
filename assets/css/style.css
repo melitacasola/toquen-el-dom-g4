@@ -61,7 +61,7 @@ header {
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly   ;
+    justify-content: space-evenly;
 }
 .menu{
     display: flex;
