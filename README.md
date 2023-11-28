@@ -14,6 +14,12 @@ Disfruta tocando la flauta pan de manera repetida, tantas veces como desees.
 Equipo Artístico: En la página "About Us", conoce a nuestro equipo a través de imágenes que los presentan como artistas, junto con breves descripciones de cada miembro.
 **En Construcción**
 Instrumentos Futuros: Explora la sección "En Construcción" para ver instrumentos que estamos desarrollando. Cada uno te llevará a una página dedicada al instrumento no desarrollado.
+
+**Tecnologia usada:**
+Estructura-HTML
+Estilos-CSS
+Funcionalidades-JavaScript
+
  ### Instalación
 Clonación del Repositorio con el comando:
  git clone https://github.com/01joanna/toquen-el-dom-g4.git
