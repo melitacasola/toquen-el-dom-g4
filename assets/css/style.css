@@ -384,7 +384,8 @@ a {
     }
     .hmDescriptive h2{
         font-size: 18px;
-        padding: 1.5rem 0;
+        padding-left: 20px;
+        text-align: centerre
     }
 
     .hmText p{
@@ -392,7 +393,7 @@ a {
     }
 
     .hmImage img{
-        width: 90%;
+        width: 100%;
         margin: 20px 0;
     }
 
