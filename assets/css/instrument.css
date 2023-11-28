@@ -9,13 +9,13 @@ main h1 {
 }
 
 /* ----------- FLAUTA DE PAN ----------- */
-.panflute-main {
+.panfluteMain {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.panflute-set {
+.panfluteSet {
     position: relative;
     display: flex;
     justify-content: center;
@@ -29,16 +29,16 @@ main h1 {
     padding: 1rem;
 }
 
-.panflute-tubes {
+.panfluteTubes {
     display: flex;
 }
 
-.panflute-tubes .tube:hover {
+.panfluteTubes .tube:hover {
     opacity: 0.8;
     cursor: pointer;
 }
 
-.panflute-tubes .tube {
+.panfluteTubes .tube {
     list-style: none;
     width: 5rem;
     border-radius: 4px;
@@ -47,7 +47,7 @@ main h1 {
 }
 
 /* ----------- FLAUTA DE PAN - RECTANGULO AZUL ----------- */
-.panflute-box {
+.panfluteBox {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -65,7 +65,7 @@ main h1 {
     transform: translate(-50%, -50%);
 }
 
-.notes-box-text {
+.notesBox-text {
     list-style: none;
     display: flex;
     margin-top: 0.6rem;
@@ -75,7 +75,7 @@ main h1 {
     position: relative;
 }
 
-.notes-box-text li {
+.notesBox-text li {
     color: var(--green-black);
     background-color: #f7ddc2;
     border-radius: 0.2rem;
@@ -87,7 +87,7 @@ main h1 {
     
 }
 
-.rectangle-top {
+.rectangleTop {
     width: 45rem;
     height: 0.25rem;
     background-color: var(--color-orange);
@@ -99,7 +99,7 @@ main h1 {
 
 }
 
-.keyboard-box-text {
+.keyboardBox-text {
     list-style: none;
     display: flex;
     margin-top: 1.8rem;
@@ -109,7 +109,7 @@ main h1 {
     position: relative;
 }
 
-.keyboard-box-text li {
+.keyboardBox-text li {
     color: var(--green-black);
     background-color: #f7ddc2;
     border-radius: 0.2rem;
@@ -120,7 +120,7 @@ main h1 {
     width: 2rem;
 }
 
-.rectangle-bottom {
+.rectangleBottom {
     width: 45rem;
     height: 0.25rem;
     background-color: var(--color-green);
@@ -148,19 +148,19 @@ main h1 {
 }
 
 /* ----------- INFORMACIÓN INSTRUMENTO ----------- */
-.first-section {
+.firstSection {
     margin-left: 3rem;
     margin-right: 3rem;
     margin-bottom: 2rem;
 }
 
-.first-section li::before {
+.firstSection li::before {
     content: '• ';
     width: 0.5rem;
     margin-left: 0.5rem;
 }
 
-.second-section {
+.secondSection {
     display: flex;
     justify-content: space-around;
 
@@ -168,27 +168,27 @@ main h1 {
     margin-right: 3rem;
 }
 
-.instru-section, .video-section {
+.instruSection, .videoSection {
     flex: 1;
 }
 
 /* ----------- VIDEOS RELACIONADOS ----------- */
-.video-section {
+.videoSection {
     margin-left: 3rem;
     display: flex;
 }
 
-.just-videos {
+.justVideos {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.just-videos iframe {
+.justVideos iframe {
     width: 80%;
 }
 
-.video-button {
+.videoButton {
     align-self: flex-start;
     margin-right: 2.5rem;
     padding: 0.3rem 1rem;
@@ -199,7 +199,7 @@ main h1 {
     cursor: pointer;
 }
 
-.video-button:hover {
+.videoButton:hover {
     background-color: var(--color-beage);
 }
 
@@ -209,44 +209,44 @@ main h1 {
         width: 34rem;
     }
 
-    .panflute-box {
+    .panfluteBox {
         width: 35rem;
     }
 
-    .second-section {
+    .secondSection {
         flex-direction: column;
         align-items: stretch;
 
         gap: 2rem;
     }
 
-    .video-section {
+    .videoSection {
         margin-left: 0;
     }
 
-    .video-button {
+    .videoButton {
         margin-top: 0.5rem;
     }
 
-    .notes-box-text {
+    .notesBox-text {
         margin-top: 1.8rem;
         gap: 0.65rem;
     }
 
-    .notes-box-text li {
+    .notesBox-text li {
         width: 1.65rem;
     }
 
-    .rectangle-top {
+    .rectangleTop {
         width: 35rem;
         bottom: 2.2rem;
     }
 
-    .keyboard-box {
+    .keyboardBox {
         display: none;
     }
 
-    .rectangle-bottom{
+    .rectangleBottom{
         display: none;
     }
 
