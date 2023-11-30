@@ -14,61 +14,69 @@
 </head>
 <body>
     <header>
-        <div class="logo-titulo">
+        <div class="titleLogo">
             <div class="logo">
-            <a href="./home.html"><img src="../assets/img/LOGO.svg" alt="Toquen el DOM"></a>
+            <a href="../home.html"><img src="/assets/img/LOGO.svg" alt="Toquen el DOM"></a>
             </div>
-            <div class="titulo-header">
-                <p class="titulo-big">Toquen el DOM</p>
-                <p class="titulo-small">Escuela de música online</p>
+            <div class="titleHeader">
+                <p class="bigTitle">Toquen el DOM</p>
+                <p class="smallTitle">Escuela de música online</p>
             </div>
         </div>
-        <nav>
-            <ul>
-                <li><a class="navHeader1" href="../pages/aboutUs.html">Nosotras</a></li>
-                <li><a class="navHeader" href="../pages/instrument.html">Flauta</a></li>
-                <li><a class="navHeader" href="../pages/construction.html">Guitarra</a></li>
-                <li><a class="navHeader" href="../pages/construction.html">Bateria</a></li>
-                <li><a class="navHeader" href="../pages/construction.html">Piano</a></li>
+        <label class="menuBurger">
+            <i class="fa-solid fa-bars"  id="menuBurger"></i>
+        </label>
+        
+        <nav class="navList">
+            <ul class="menu" id="menu">
+                <li><a class="navHeader1" href="/pages/aboutUs.html">Nosotras</a></li>
+                <li><a class="navHeader" href="/pages/instrument.html">Flauta</a></li>
+                <li><a class="navHeader" href="/pages/construction.html">Guitarra</a></li>
+                <li><a class="navHeader" href="/pages/construction.html">Bateria</a></li>
+                <li><a class="navHeader" href="/pages/construction.html">Piano</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="construction-main">
-            <section class="construction-image">
-                <img src="../assets/img/Bateria.png" alt="fotografía de instrumentos alternativos en construccion">
-                <img src="../assets/img/Piano.png" alt="fotografía de instrumentos alternativos en construccion">
-                <img src="../assets/img/Guitarra.png" alt="fotografía de instrumentos alternativos en construccion">
+        <section class="constructionMain">
+            <section class="constructionImage">
+                <img src="../assets/img/Bateria.png" alt="fotografía de instrumentos alternativos en construccion" class="bateria">
+                <!-- <img src="../assets/img/Piano.png" alt="fotografía de instrumentos alternativos en construccion" class="piano">
+                <img src="../assets/img/Guitarra.png" alt="fotografía de instrumentos alternativos en construccion" class=""> -->
             </section>
-            <section class="construction-desc">
+            <section class="constructionDesc">
                 <i class="fas fa-triangle-exclamation" alt="simbolo de advertencia" alt="icono de advertencia"></i>
-                <div class="construction-text">
+                <div class="constructionText">
                     <h1>PAGINA EN CONSTRUCCION</h1>
                     <p>¡Aún estamos trabajando en los siguientes instrumentos!</p>
                         <p>Inténtelo de nuevo más tarde.</p>
-                    <button class="btn-volver" alt="botón de vuelta a la página web" href="/home.html">Volver a la página principal</button>
+                    <button class="btnBack" alt="botón de vuelta a la página web" id="btnBack">Volver a la página principal</button>
                 </div>
 
             </section>
         </section>
     </main>
     <footer>
-        <div class="redes-sociales">
+        <div class="socialNetworks">
             <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook" alt="Facebook"></i></a>
             <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter" alt="Twitter"></i></a>
             <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram" alt="Instagram"></i></a>
             <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube" alt="Youtube"></i></a>
         </div>
-        <div class="terminos-condiciones">
-            <p><a href="#">Todos los derechos reservados</a></p>
-            <p><a href="#">Políticas de cookies</a></p>
-            <p><a href="#">Política de privacidad</a></p>
-            <p><a href="#">Bájate la App</a></p>
+        <div class="termsConditions">
+            <p><a href="#">Todos los derechos reservados ©</a></p>
+            <p>|</p>
+            <p><a href="#"> Política de privacidad</a></p>
+            <p>|</p>
+            <p><a href="#">Copyright por FactoriaF5</a></p>
         </div>
-        <div class="contacto">
-            <p><a href="#">Contacto</a></p>
-            <p><a href="#">Correo electrónico</a></p>
+        <div class="contact">
+            <p><a href="./construction.html">Contacto</a></p>
+            <p>|</p>
+            <p><a href="#"> Correo electrónico</a></p>
         </div>
     </footer>
+
+    <script type="module" src="../assets/js/app.js"></script>
 </body>
 </html>

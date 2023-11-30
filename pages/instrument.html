@@ -7,70 +7,169 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/instrument.css">
     <link rel="stylesheet" href="../assets/css/tubes.css">
+
+    <link rel="icon" href="./assets/img/google-logo.png" type="image/png">
+    <link rel="icon" href="./assets/img/google-logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js">
+    </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
-        <div class="logo">
-            <a href="../home.html"><img src="../assets/img/LOGO.svg" alt="Toquen el DOM"></a>
+        <div class="titleLogo">
+            <div class="logo">
+            <a href="../home.html"><img src="/assets/img/LOGO.svg" alt="Toquen el DOM"></a>
+            </div>
+            <div class="titleHeader">
+                <p class="bigTitle">Toquen el DOM</p>
+                <p class="smallTitle">Escuela de música online</p>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="../pages/aboutUs.html">Nosotras</a></li>
-                <li><a href="../pages/instrument.html">Flauta</a></li>
-                <li><a href="../pages/construction.html">Guitarra</a></li>
-                <li><a href="./pages/construction.html">Bateria</a></li>
-                <li><a href="../pages/construction.html">Piano</a></li>
+        <label class="menuBurger">
+            <i class="fa-solid fa-bars"  id="menuBurger"></i>
+        </label>
+        
+        <nav class="navList">
+            <ul class="menu" id="menu">
+                <li><a class="navHeader1" href="/pages/aboutUs.html">Nosotras</a></li>
+                <li><a class="navHeader" href="/pages/instrument.html">Flauta</a></li>
+                <li><a class="navHeader" href="/pages/construction.html">Guitarra</a></li>
+                <li><a class="navHeader" href="/pages/construction.html">Bateria</a></li>
+                <li><a class="navHeader" href="/pages/construction.html">Piano</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <div class="panflute-main">
-            <div class="panflute-set">
+        <!-- ------------- FLAUTA DE PAN ------------- -->
+        <h1>Flauta de Pan</h1>
+        <div class="panfluteMain">
+            <div class="panfluteSet">
                 <div class="panflute">
-                    <ul class="panflute-tubes">
-                        <li class="tube one" data-key="a"><span>A</span></li>
-                        <li class="tube two" data-key="w"><span>W</span></li>
-                        <li class="tube three" data-key="s"><span>S</span></li>
-                        <li class="tube four" data-key="e"><span>E</span></li>
-                        <li class="tube five" data-key="d"><span>D</span></li>
-                        <li class="tube six" data-key="r"><span>R</span></li>
-                        <li class="tube seven" data-key="f"><span>F</span></li>
-                        <li class="tube eight" data-key="t"><span>T</span></li>
-                        <li class="tube nine" data-key="g"><span>G</span></li>
-                        <li class="tube ten" data-key="y"><span>Y</span></li>
-                        <li class="tube eleven" data-key="h"><span>H</span></li>
-                        <li class="tube twelve" data-key="u"><span>U</span></li>
-                        <li class="tube thirteen" data-key="j"><span>J</span></li>
-                        <li class="tube fourteen" data-key="i"><span>I</span></li>
-                        <li class="tube fifteen" data-key="k"><span>K</span></li>
+                    <ul class="panfluteTubes">
+                        <li class="tube one" data-key="a"></li>
+                        <li class="tube two" data-key="w"></li>
+                        <li class="tube three" data-key="s"></li>
+                        <li class="tube four" data-key="e"></li>
+                        <li class="tube five" data-key="d"></li>
+                        <li class="tube six" data-key="r"></li>
+                        <li class="tube seven" data-key="f"></li>
+                        <li class="tube eight" data-key="t"></li>
+                        <li class="tube nine" data-key="g"></li>
+                        <li class="tube ten" data-key="y"></li>
+                        <li class="tube eleven" data-key="h"></li>
+                        <li class="tube twelve" data-key="u"></li>
+                        <li class="tube thirteen" data-key="j"></li>
+                        <li class="tube fourteen" data-key="i"></li>
+                        <li class="tube fifteen" data-key="k"></li>
                     </ul>
                 </div>
     
-                <div class="panflute-box">
-                    
+                <div class="panfluteBox">
+                    <div class="notesBox">
+                        <ul class="notesBox-text">
+                            <li>SOL</li>
+                            <li>LA</li>
+                            <li>SI</li>
+                            <li>DO</li>
+                            <li>RE</li>
+                            <li>MI</li>
+                            <li>FA</li>
+                            <li>SOL</li>
+                            <li>LA</li>
+                            <li>SI</li>
+                            <li>DO</li>
+                            <li>RE</li>
+                            <li>MI</li>
+                            <li>FA</li>
+                            <li>SOL</li>
+                        </ul>
+                        <div class="rectangleTop"></div>
+                    </div>
+                    <div class="keyboardBox">
+                        <ul class="keyboardBox-text">
+                            <li>A</li>
+                            <li>W</li>
+                            <li>S</li>
+                            <li>E</li>
+                            <li>D</li>
+                            <li>R</li>
+                            <li>F</li>
+                            <li>T</li>
+                            <li>G</li>
+                            <li>Y</li>
+                            <li>H</li>
+                            <li>U</li>
+                            <li>J</li>
+                            <li>I</li>
+                            <li>K</li>
+                        </ul>
+                        <div class="rectangleBottom"></div>
+                    </div>
                 </div> 
             </div>
         </div>
 
-    </main>
+        <!-- ------------- INFORMACIÓN ADICIONAL ------------- -->
+        <div class="info">
+            <section class="firstSection">
+                <h2>Primeros pasos</h2>
+                <br>
+                <p>Para poder tocar la flauta de pan virtualmente se deberian seguir como primeros pasos:</p>
+                <br>
+                <ul>
+                    <li>Leer las instrucciones de la aplicación.</li>
+                    <li>Seleccionar el modo de juego que prefieras, ya sea usando el teclado o el ratón.</li>
+                    <li>Ajustar el volumen de tu computadora antes de jugar con la flauta de pan.</li>
+                    <li>Practicar con la aplicación web, siguiendo las lecciones, y los ejercicios.</li>
+                </ul>
+            </section>
+    
+            <div class="secondSection">
+                <!-- ------------- INFO INSTRUMENTO ------------- -->
+                <section class="instruSection">
+                    <h3>Que instrumento es: <br>Flauta de pan</h3>
+                    <br>
+                    <p>La flauta de pan es un instrumento musical de origen ancestral que consiste en una serie de tubos de diferentes longitudes unidos entre sí. Cada tubo produce una nota distinta cuando se sopla en él. La flauta de pan tiene un sonido dulce y melancólico, y se utiliza en diversas culturas alrededor del mundo.</p>
+                    <br>
+                    <p>La escala de la flauta de pan varía dependiendo del número de tubos que haya en el instrumento. La flauta de pan más común tiene 13 tubos, lo que le permite alcanzar una extensión de aproximadamente 2 octavas. Las notas que se pueden producir van desde la nota más grave hasta la más aguda, pasando por todas las notas intermedias.</p>
+                </section>
 
+                <!-- ------------- VIDEOS RELACIONADOS ------------- -->
+                <section class="videoSection">
+                    <h3>Videos relacionados</h3>
+                    <br>
+                    <div class="justVideos">
+                        <iframe src="https://www.youtube.com/embed/QpiZGI2A14c?si=T5bwi_koHlr4srM_" frameborder="0" allowfullscreen></iframe>
+                        <br>
+                        <iframe src="https://www.youtube.com/embed/ndUCNnhH03Q?si=vg39KzEOxKFGyWvY" frameborder="0" allowfullscreen></iframe>
+                        <br>
+                    </div>
+                    <a class="videoButton" href="https://youtube.com/playlist?list=PLKN8nBgp0CpL4fX57loGnkyrz30Dn962c&si=70wgtewf-FE0pFpx" target="_blank">Ver más</a>
+                </section>
+            </div>
+        </div>
+
+    </main>
     <footer>
-        <div class="redes-sociales">
-            <a href="https://www.facebook.com/" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
-            <a href="https://twitter.com/" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
-            <a href="https://www.youtube.com/" target="_blank"><img src="youtube-icon.png" alt="Youtube"></a>
+        <div class="socialNetworks">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook" alt="Facebook"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter" alt="Twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram" alt="Instagram"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube" alt="Youtube"></i></a>
         </div>
-        <div class="terminos-condiciones">
-            <p><a href="#">Todos los derechos reservados</a></p>
-            <p><a href="#">Políticas de cookies</a></p>
-            <p><a href="#">Política de privacidad</a></p>
-            <p><a href="#">Bájate la App</a></p>
+        <div class="termsConditions">
+            <p><a href="#">Todos los derechos reservados ©</a></p>
+            <p>|</p>
+            <p><a href="#"> Política de privacidad</a></p>
+            <p>|</p>
+            <p><a href="#">Copyright por FactoriaF5</a></p>
         </div>
-        <div class="contacto">
-            <p><a href="#">Contacto</a></p>
-            <p><a href="#">Correo electrónico</a></p>
+        <div class="contact">
+            <p><a href="./construction.html">Contacto</a></p>
+            <p>|</p>
+            <p><a href="#"> Correo electrónico</a></p>
         </div>
     </footer>
 </body>

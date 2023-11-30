@@ -1,32 +1,44 @@
-/* @import url(./reset.css); */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Solway:wght@300;700&display=swap');
 @import url('https://fonts.cdnfonts.com/css/oliver-2');
 
-.panflute-main {
+main h1 {
+    text-align: center;
+    margin-top: 2.5rem;
+    font-family: "Oliver";
+    font-size: 3rem;
+}
+
+/* ----------- FLAUTA DE PAN ----------- */
+.panfluteMain {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 25rem;
-    background: gray;
 }
 
-.panflute-set {
+.panfluteSet {
     position: relative;
     display: flex;
     justify-content: center;
-}
 
-.panflute {
-    width: 35rem;
+    margin: 1rem;
     padding: 1rem;
 }
 
-.panflute-tubes {
-    display: flex;
-    margin-top: 2rem;
+.panflute {
+    width: 44rem;
+    padding: 1rem;
 }
 
-.panflute-tubes .tube {
+.panfluteTubes {
+    display: flex;
+}
+
+.panfluteTubes .tube:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.panfluteTubes .tube {
     list-style: none;
     width: 5rem;
     border-radius: 4px;
@@ -34,20 +46,208 @@
 
 }
 
-.panflute-box {
+/* ----------- FLAUTA DE PAN - RECTANGULO AZUL ----------- */
+.panfluteBox {
     display: flex;
-    justify-content: center;
-    width: 36rem;
+    flex-direction: column;
+    align-items: center;
+    width: 45rem;
     height: 4.5rem;
 
-    border: 2px solid #d8b28e;
+    border: 2px solid var(--color-brown);
     border-radius: 10px;
     background: radial-gradient(circle farthest-corner at 10% 20%,  #213d49 0%, #000405 90% );
     
     position: absolute;
 
     left: 50%;
-    top: 27%;
+    top: 22%;
     transform: translate(-50%, -50%);
 }
 
+.notesBox-text {
+    list-style: none;
+    display: flex;
+    margin-top: 0.6rem;
+    gap: 0.955rem;
+
+    z-index: 1;
+    position: relative;
+}
+
+.notesBox-text li {
+    color: var(--green-black);
+    background-color: #f7ddc2;
+    border-radius: 0.2rem;
+
+    font-size: 0.75rem;
+    text-align: center;
+    font-weight: 600;
+    width: 2rem;
+    
+}
+
+.rectangleTop {
+    width: 45rem;
+    height: 0.25rem;
+    background-color: var(--color-orange);
+
+    bottom: 3.5rem;
+    left: 0;
+    position: absolute;
+    z-index: 0;
+
+}
+
+.keyboardBox-text {
+    list-style: none;
+    display: flex;
+    margin-top: 1.8rem;
+    gap: 0.955rem;
+
+    z-index: 1;
+    position: relative;
+}
+
+.keyboardBox-text li {
+    color: var(--green-black);
+    background-color: #f7ddc2;
+    border-radius: 0.2rem;
+
+    font-size: 0.75rem;
+    text-align: center;
+    font-weight: 600;
+    width: 2rem;
+}
+
+.rectangleBottom {
+    width: 45rem;
+    height: 0.25rem;
+    background-color: var(--color-green);
+
+    bottom: 0.85rem;
+    left: 0;
+    position: absolute;
+    z-index: 0;
+
+}
+
+/* ----------- INFORMACIÓN ADICIONAL ----------- */
+.info {
+    margin-bottom: 4rem;
+}
+.info section{
+    background: white;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 0.5rem;
+
+    padding: 1.5rem 1.5rem 3rem 1.5rem;
+}
+
+/* ----------- INFORMACIÓN INSTRUMENTO ----------- */
+.firstSection {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+}
+
+.firstSection li::before {
+    content: '• ';
+    width: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.secondSection {
+    display: flex;
+    justify-content: space-around;
+
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.instruSection, .videoSection {
+    flex: 1;
+}
+
+/* ----------- VIDEOS RELACIONADOS ----------- */
+.videoSection {
+    margin-left: 3rem;
+    display: flex;
+}
+
+.justVideos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.justVideos iframe {
+    width: 80%;
+}
+
+.videoButton {
+    align-self: flex-start;
+    margin-right: 2.5rem;
+    padding: 0.3rem 1rem;
+    background-color: var(--color-brown);
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+
+    cursor: pointer;
+}
+
+.videoButton:hover {
+    background-color: var(--color-beage);
+}
+
+/* ----------- MEDIA QUERIES ----------- */
+@media screen and (max-width: 768px) {
+    .panflute {
+        width: 34rem;
+    }
+
+    .panfluteBox {
+        width: 35rem;
+    }
+
+    .secondSection {
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 2rem;
+    }
+
+    .videoSection {
+        margin-left: 0;
+    }
+
+    .videoButton {
+        margin-top: 0.5rem;
+    }
+
+    .notesBox-text {
+        margin-top: 1.8rem;
+        gap: 0.65rem;
+    }
+
+    .notesBox-text li {
+        width: 1.65rem;
+    }
+
+    .rectangleTop {
+        width: 35rem;
+        bottom: 2.2rem;
+    }
+
+    .keyboardBox {
+        display: none;
+    }
+
+    .rectangleBottom{
+        display: none;
+    }
+
+}

@@ -23,7 +23,7 @@
 
 body {
     font-family: 'Solway', sans-serif;
-    background-color: var(--color-beage);
+    background: var(--color-beage);
 }
 
 /* HEADER */
@@ -35,18 +35,18 @@ header {
     justify-content: space-between;
 }
 
-.logo-titulo {
+.titleLogo {
     display: flex;
     justify-content: space-between;
 }
 
-.titulo-big {
+.bigTitle {
     font-family: 'Oliver', sans-serif;
     font-size: 1.8rem;
     margin-left: 0.9rem;
     margin-top: 1rem;
 }
-.titulo-small {
+.smallTitle {
     font-family: 'Oliver', sans-serif;
     font-size: 0.8rem;
     margin-left: 2rem;
@@ -57,11 +57,16 @@ header {
 .logo img {
     max-height: 70px; 
 }
-nav ul {
+.navList {
     list-style: none;
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly   ;
 }
-nav ul li {
+.menu{
+    display: flex;
+}
+.navList ul li {
     margin-right: 30px;
 }
 .navHeader1{
@@ -71,7 +76,6 @@ nav ul li {
     background-color: var(--color-beage);
     border-radius: 20px;
     transition: background-color 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
 } 
 .navHeader{
     color: var(--color-green-black);
@@ -79,64 +83,190 @@ nav ul li {
     background-color: var(--color-beage);
     border-radius: 20px;
     transition: background-color 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+    
 } 
-nav ul li a:hover {
+.navList ul li a:hover {
     background-color: var(--color-brown);
 }
 
+.menuBurger {
+    display: none;
+}
+
 /* PÁGINA HOME */
-.hm-image img{
-    max-height: 320px;
-}
-.hm-descriptivo {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 3rem;
+
+.hmImage img{
+    width: 30rem;
+    height: 27rem;
+    border: 1px solid #000;
+    /* padding: 20px; */
+    margin: 20px;
+    flex: 1;
 }
 
-.hm-texto {
-    width: 45rem;
+.hmDescriptive {
+    /* width: 39rem; */
     font-family: 'Solway', sans-serif;
+    flex: 1;
+    padding: 2rem;
+    width: auto;
+    
 }
 
-.hm-texto h1{
+.hmDescriptive h1{
     font-family: 'Oliver', sans-serif;
-    font-size: 50px;
+    font-size: 86px;
+    flex: 1;
 }
 
-.hm-texto h2 {
+.hmDescriptive h2 {
     font-family: 'Oliver', sans-serif;
-    font-size: 13px;
+    font-size: 24px;
     padding-left: 2rem;
+    flex: 1;
 }
 
-.hm-texto p{
+.hmDescriptive p{
     text-align: justify;
-    margin-top: 2rem;
+    margin: 2rem;
+    font-size: 24px;
+    flex: 1;
+}
+.hmText {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 2rem; */
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    
+}
+/* carrusel*/
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
-/* página construcción */
-.construction-main {
+.carouselContainer {
+    position: relative;
+    width: 25rem;
+    overflow: hidden;
+}
+
+.carouselSlide {
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+.carouselSection{
+    width: calc(100% /4);
+    height: 100%;
+
+}
+
+.carouselSection img {
+    width: 25rem;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.btnLeft,
+.btnRight{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    transform: translate(0, -50%);
+    transition: .5s ease;
+    user-select: none;
+}
+
+.btnLeft{
+    left: 10px;
+}
+.btnRight{
+    right: 10px;
+}
+
+.btnLeft:hover,
+.btnRight:hover{
+    background-color: #9dadb4;
+    color: aliceblue;
+}
+
+/* ---------- página Sobre Nosotras --------------- */
+
+.hmDescriptive.aboutUs{
+    margin: 3.5rem 3.5rem 0 3.5rem;
+    padding: 2.5rem 2.5rem 0 2.5rem;
+    text-align: center;
+}
+.hmDescriptive.aboutUs h1{
+    font-size: 64px;
+}
+.teachers {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 7rem;
+    padding: 1rem 3.5rem 3.5rem 3.5rem;
+    width: 80%;
+}
+
+.teacher {
+    text-align: center; 
+    /* margin: 10px; */
+    height: 100%;
+}
+
+.teacher p{
+    text-align: start;
+    font-size: 20px;
+    margin: 10px;
+    width: 90%;
+}
+
+.teacher span{
+    font-weight: 700;
+}
+
+.teacher img {
+    /* width: 12rem; */
+    height: 12rem;
+    border-radius: 10%;
+}
+
+
+
+
+
+/* ---------- página construcción --------------- */
+.constructionMain {
     text-align: center;
     padding: 5rem;
 }
-.construction-image img {
+.constructionImage img {
     max-width: 20rem;
     padding-bottom: 2.5rem;
 }
-.construction-desc i{
-    font-size: 6rem;
-    margin: 1rem;
-    color: #ff765a;
+.constructionDesc i{
+    font-size: 8rem;
+    margin: 3rem 0rem 0.5rem 0rem;
 }
-.construction-text h1{
+.constructionText h1{
     font-family: 'Oliver', sans-serif;
     font-size: 4rem;
     margin: 1rem
 }
 
-.btn-volver {
+.btnBack {
     font-family: 'Solway', sans-serif;
     background-color: var(--color-green-black);
     color: white;
@@ -148,31 +278,32 @@ nav ul li a:hover {
 
 
 /* footer */
-
 footer {
     background-color: var(--color-yellow);
     padding: 13px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 10px;
+    font-size: 12px;
     font-family: "Space Mono", sans-serif;
-    }
+}
+
 
 a {
     text-decoration: none;
     color: black;
 }
 
-.redes-sociales {
+.socialNetworks {
     margin-left: 2rem;
 }
-.redes-sociales a {
-    margin-left: 0.3rem;
+.socialNetworks i {
+        margin-left: 0.3rem;
+    font-size: 16px;
 
 }
 
-.terminos-condiciones {
+.termsConditions {
     width: 40rem;
     display: flex;
     background-color: var(--color-yellow);
@@ -180,10 +311,179 @@ a {
 
 }
 
-.contacto {
+.contact {
     display: flex;
     margin-right: 2em;
-    width: 12rem;
+    width: 14rem;
     justify-content: space-around;
 
+}
+
+/* --------------------- MEDIA QUERIES ---------------------- */
+@media screen and (max-width: 768px) {
+    /* --------HEADER--------- */
+
+    .menuBurger {
+        display: block;
+        position: absolute;
+        color: var(--color-beage);
+        font-size: 50px;
+        margin-left: 307px;
+        margin-top: 10px;
+    }
+    .logo img{
+        width: 90%;
+    }
+    .titleHeader {
+        display: none; 
+    }
+
+    .menu {
+        display: none;
+        position: fixed;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        top: 80px;
+        position: absolute;
+    }
+    
+    .menu.show{
+        display: block;
+    }
+    
+    .navList ul li {
+        background-color: var(--color-yellow);
+        padding: 30px;
+        font-size: 20px;
+}
+
+    .navHeader, .navHeader1 {
+        background-color: var(--color-yellow);
+        text-align: center;
+    }
+    /* ------MAIN------ */
+    .hmText {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        padding: 2rem;
+        
+
+    }
+
+    .hmDescriptive {
+        font-size: 90%;
+    }
+
+    .hmDescriptive h1{
+        font-size: 50px;
+    }
+    .hmDescriptive h2{
+        font-size: 18px;
+        padding-left: 20px;
+        text-align: center;
+    }
+
+    .hmText p{
+        margin: 1rem;
+    }
+
+    .hmImage img{
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    /* -----CARROUSEL----- */
+    .container {
+        width: 90%;
+    }
+
+
+    /* ------SOBRE NOSOTRAS------ */
+    .hmDescriptive.aboutUs{
+        margin: 2.5rem;
+        padding: 2rem;
+        /* position: fixed; */
+    }
+
+    .hmDescriptive.aboutUs h1{
+        font-size: 2.5rem;
+    }
+
+    .teachers{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        margin: 1rem;
+        width: auto;
+    }
+
+    .teacher{
+        margin: 2rem 0;
+        /* padding: 2rem 0; */
+        padding: 0;
+        align-items: center;
+    }
+
+    .teacher img{
+        height: 20rem;
+    }
+
+    .teacher p{
+        text-align: justify;
+        margin: 1.5rem 0;
+        width: auto;
+    }
+
+
+    /* ------CONSTRUCCION------ */
+    .constructionImage img {
+        padding-bottom: 0;
+        width: 100%;
+    }
+
+    .piano, .guitarra {
+        display: none;
+    }
+    .constructionDesc {
+        margin: 0;
+    }
+
+    .constructionDesc i{
+        font-size: 40px;
+    }
+    .constructionText {
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+
+    }
+    .constructionText h1 {
+        font-size: 2rem;
+    }
+
+    .btnBack {
+        padding: 0.3rem;
+        border-radius: 20px;
+        margin: 3rem;
+    }
+
+
+    /* ------FOOTER------ */
+    .socialNetworks i{
+        font-size: 15px;
+
+    }
+    .termsConditions {
+        display: none;
+    }
+
+    .contact {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 0;
+    }
 }
