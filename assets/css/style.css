@@ -123,14 +123,17 @@ nav ul li a:hover {
 }
 .construction-image img {
     max-width: 20rem;
-    padding-bottom: 4rem;
+    padding-bottom: 2.5rem;
 }
 .construction-desc i{
-    font-size: 2rem;
+    font-size: 6rem;
+    margin: 1rem;
+    color: #ff765a;
 }
 .construction-text h1{
     font-family: 'Oliver', sans-serif;
-    font-size: 3rem;
+    font-size: 4rem;
+    margin: 1rem
 }
 
 .btn-volver {
