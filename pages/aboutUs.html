@@ -14,43 +14,87 @@
 </head>
 <body>
     <header>
-        <div class="logo-titulo">
+        <div class="titleLogo">
             <div class="logo">
-            <a href="./home.html"><img src="../assets/img/LOGO.svg" alt="Toquen el DOM"></a>
+            <a href="../home.html"><img src="/assets/img/LOGO.svg" alt="Toquen el DOM"></a>
             </div>
-            <div class="titulo-header">
-                <p class="titulo-big">Toquen el DOM</p>
-                <p class="titulo-small">Escuela de música online</p>
+            <div class="titleHeader">
+                <p class="bigTitle">Toquen el DOM</p>
+                <p class="smallTitle">Escuela de música online</p>
+            </div>
+            <div class="menuBurger">
+                <i class="fa-solid fa-bars" id="menuBurger"></i>
             </div>
         </div>
-        <nav>
-            <ul>
-                <li><a class="navHeader1" href="../pages/aboutUs.html">Nosotras</a></li>
-                <li><a class="navHeader" href="../pages/instrument.html">Flauta</a></li>
-                <li><a class="navHeader" href="../pages/construction.html">Guitarra</a></li>
-                <li><a class="navHeader" href="../pages/construction.html">Bateria</a></li>
-                <li><a class="navHeader" href="../pages/construction.html">Piano</a></li>
+        <nav class="navList">
+            <ul class="menu" id="menu">
+                <li><a class="navHeader1" href="/pages/aboutUs.html">Nosotras</a></li>
+                <li><a class="navHeader" href="/pages/instrument.html">Flauta</a></li>
+                <li><a class="navHeader" href="/pages/construction.html">Guitarra</a></li>
+                <li><a class="navHeader" href="/pages/construction.html">Bateria</a></li>
+                <li><a class="navHeader" href="/pages/construction.html">Piano</a></li>
             </ul>
         </nav>
     </header>
-    <main></main>
+    <main>
+
+        <section class="hmDescriptive aboutUs">
+            <h1>LA ESCUELA: SOBRE NOSOTRAS</h1>
+        </section>
+        <section class="teachers">
+            <div class="teacher">
+                <img src="../assets/img/avatares/Danni-2.svg" alt="teacher Daniela" />
+                <p>Encuentra en nuestro equipo a <span>DANIELLA</span>, quien comparte su pasión por el canto y el piano. Con destreza en ambas disciplinas, guía a los estudiantes a descubrir la expresión musical.</p>
+            </div>
+        
+            <div class="teacher">
+                <img src="../assets/img/avatares/Stef-2.svg" alt="teacher Stef"/>
+                <p>Conoce a <span>STEF</span>, nuestra experta musical. Ofrece valiosas horas de técnica musical para diversos instrumentos, guiando a los estudiantes en un viaje hacia la maestría¡Descubre la magia de perfeccionar tu arte con ella!. .</p>
+            </div>
+
+            <div class="teacher">
+                <img src="../assets/img/avatares/Johanna-2.svg" alt="teacher Johanna"/>
+                <p><span>JOHANNA</span> es apasionada profesora de flauta de pan y experta en teoría musical. Su conocimiento teórico se combina con la magia de la flauta de pan, ofreciendo a los estudiantes una experiencia melódica única.</p>
+            </div>
+
+            <div class="teacher">
+                <img src="../assets/img/avatares/Gabriela-2.svg" alt="teacher Gabi"/>
+                <p>A <span>GABI</span> le encanta iniciar a los más pequeños en el mundo musical. Con creatividad y alegría, cultiva el amor por la música en cada niño. ¡Acompaña a tus pequeños en este viaje lleno de descubrimientos melódicos!</p>
+            </div>
+
+            <div class="teacher">
+                <img src="../assets/img/avatares/Arleny-2.svg" alt="teacher Arleny"/>
+                <p><span>ARLENY</span> es coordinadora de talleres musicales y experta en guitarra. Dirige con pasión, creando un espacio donde la música florece. Con su destreza en la guitarra, guía a los estudiantes hacia la maestría.</p>
+            </div>
+            <div class="teacher">
+                <img src="../assets/img/avatares/Melita-2.svg" alt="teacher Melissa"/>
+                <p><span>MELISSA</span>, instructora de música digital,  enseña a tocar instrumentos utilizando aplicaciones modernas. Sumérgete en la fusión entre tecnología y música mientras exploras nuevas formas de aprender y crear melodías.</p>
+            </div>
+        
+        
+        </section>
+    </main>
     <footer>
-        <div class="redes-sociales">
+        <div class="socialNetworks">
             <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook" alt="Facebook"></i></a>
             <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter" alt="Twitter"></i></a>
             <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram" alt="Instagram"></i></a>
             <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube" alt="Youtube"></i></a>
         </div>
-        <div class="terminos-condiciones">
-            <p><a href="#">Todos los derechos reservados</a></p>
-            <p><a href="#">Políticas de cookies</a></p>
-            <p><a href="#">Política de privacidad</a></p>
-            <p><a href="#">Bájate la App</a></p>
+        <div class="termsConditions">
+            <p><a href="#">Todos los derechos reservados ©</a></p>
+            <p>|</p>
+            <p><a href="#"> Política de privacidad</a></p>
+            <p>|</p>
+            <p><a href="#">Copyright por FactoriaF5</a></p>
         </div>
-        <div class="contacto">
-            <p><a href="#">Contacto</a></p>
-            <p><a href="#">Correo electrónico</a></p>
+        <div class="contact">
+            <p><a href="./construction.html">Contacto</a></p>
+            <p>|</p>
+            <p><a href="#"> Correo electrónico</a></p>
         </div>
     </footer>
+
+    <script src="../assets/js/app.js"></script>
 </body>
 </html>
