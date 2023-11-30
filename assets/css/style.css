@@ -362,9 +362,6 @@ a {
         background-color: var(--color-yellow);
         text-align: center;
     }
-
-    .menuBurgerNav:checked + .navList
-
     /* ------MAIN------ */
     .hmText {
         display: flex;
@@ -385,7 +382,7 @@ a {
     .hmDescriptive h2{
         font-size: 18px;
         padding-left: 20px;
-        text-align: centerre
+        text-align: center;
     }
 
     .hmText p{
