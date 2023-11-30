@@ -148,21 +148,26 @@ main h1 {
 }
 
 /* ----------- INFORMACIÓN INSTRUMENTO ----------- */
-.firstSection {
-    margin-left: 3rem;
-    margin-right: 3rem;
+
+.firstSteps, .firstTrack {
+    flex: 1;
+    /* margin-left: 3rem; */
+    /* margin-right: 3rem; */
     margin-bottom: 2rem;
 }
+.firstTrack {
+    margin-left: 3rem;
+}
 
-.firstSection li::before {
+.firstSteps li::before {
     content: '• ';
     width: 0.5rem;
     margin-left: 0.5rem;
 }
 
-.secondSection {
+.secondSection, .firstSection {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
     margin-left: 3rem;
     margin-right: 3rem;
@@ -195,6 +200,7 @@ main h1 {
     background-color: var(--color-brown);
     border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    margin-top: 1.5rem;
 
     cursor: pointer;
 }
