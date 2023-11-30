@@ -257,8 +257,9 @@ header {
     padding-bottom: 2.5rem;
 }
 .constructionDesc i{
-    font-size: 8rem;
-    margin: 3rem 0rem 0.5rem 0rem;
+    font-size: 6rem;
+    margin: 1rem;
+    color: #ff765a;
 }
 .constructionText h1{
     font-family: 'Oliver', sans-serif;
