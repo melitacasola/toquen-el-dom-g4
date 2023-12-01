@@ -29,7 +29,6 @@ function playAudio() {
   return new Promise((resolve, reject) => {
     const tuboA = document.getElementById("A");
 
-    // Agregué el cierre de paréntesis y corregí el evento 'loadeddata'
     tuboA.addEventListener("loadeddata", function() {
       console.log("probando");
       // Puedes agregar más lógica aquí si es necesario antes de resolver
