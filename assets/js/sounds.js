@@ -17,22 +17,43 @@ const audioFiles = {
     'SOL': 'assets/audio/15_K.wav',
 };
 
-function playAudio(note) {
+
+
+
+let mediaElem = document.getElementById("A");
+console.log(mediaElem);
+
+mediaElem.load();
+
+function playAudio() {
+  return new Promise((resolve, reject) => {
+    const tuboA = document.getElementById("A");
+
+    // Agregué el cierre de paréntesis y corregí el evento 'loadeddata'
+    tuboA.addEventListener("loadeddata", function() {
+      console.log("probando");
+      // Puedes agregar más lógica aquí si es necesario antes de resolver
+      resolve(tuboA);
+    });
+
+  });
+}
+
+
   const audio = new Audio(audioFiles[note]);
   audio.play();
-}
 
 const tubes = document.querySelectorAll('.tube');
 
 // Agregar eventos a los tubos
 tubes.forEach((tube) => {
   const note = tube.dataset.key;
-
   tube.addEventListener('mouseover', function () {
+    console.log("Hola MUndo");
     playAudio(note);
   });
 
-  tube.addEventListener('touchstart', function () {
+tube.addEventListener('touchstart', function () {
     playAudio(note);
   });
 });
@@ -40,9 +61,12 @@ tubes.forEach((tube) => {
 // Función para manejar eventos de teclado
 function handleKeyPress(event) {
   const key = event.key.toLowerCase();
+  console.log(key);
   if (audioFiles[key]) {
     playAudio(key);
   }
 }
 
+
 document.addEventListener('keydown', handleKeyPress);
+
