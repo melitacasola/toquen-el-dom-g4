@@ -258,3 +258,51 @@ main h1 {
     }
 
 }
+
+@media screen and (max-width: 768px), (orientation: landscape) {
+    .panflute {
+        width: 34rem;
+    }
+
+    .panfluteBox {
+        width: 35rem;
+    }
+
+    .secondSection {
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 2rem;
+    }
+
+    .videoSection {
+        margin-left: 0;
+    }
+
+    .videoButton {
+        margin-top: 0.5rem;
+    }
+
+    .notesBox-text {
+        margin-top: 1.8rem;
+        gap: 0.65rem;
+    }
+
+    .notesBox-text li {
+        width: 1.65rem;
+    }
+
+    .rectangleTop {
+        width: 35rem;
+        bottom: 2.2rem;
+    }
+
+    .keyboardBox {
+        display: none;
+    }
+
+    .rectangleBottom{
+        display: none;
+    }
+
+}
