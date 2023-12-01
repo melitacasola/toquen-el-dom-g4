@@ -4,22 +4,35 @@ document.addEventListener('DOMContentLoaded', function() {
   const audioFiles = {
     'SOL': '../assets/audio/01_A.wav',
     'LA': '../assets/audio/02_W.wav',
-    'SI': 'assets/audio/03_S.wav',  
-    'DO': 'assets/audio/04_E.wav',
-    'RE': 'assets/audio/05_D.wav',
-    'MI': 'assets/audio/06_R.wav',
-    'FA': 'assets/audio/07_F.wav',
-    'SOL': 'assets/audio/08_T.wav',
-    'LA': 'assets/audio/09_G.wav',
-    'SI': 'assets/audio/10_Y.wav',
-    'DO': 'assets/audio/11_H.wav',
-    'RE': 'assets/audio/12_U.wav',
-    'MI': 'assets/audio/13_J.wav',
-    'FA': 'assets/audio/14_I.wav',
-    'SOL': 'assets/audio/15_K.wav',
+    'SI': '../assets/audio/03_S.wav',  
+    'DO': '../assets/audio/04_E.wav',
+    'RE': '../assets/audio/05_D.wav',
+    'MI': '../assets/audio/06_R.wav',
+    'FA': '../assets/audio/07_F.wav',
+    'SOL2': '../assets/audio/08_T.wav',
+    'LA2': '../assets/audio/09_G.wav',
+    'SI2': '../assets/audio/10_Y.wav',
+    'DO2': '../assets/audio/11_H.wav',
+    'RE2': '../assets/audio/12_U.wav',
+    'MI2': '../assets/audio/13_J.wav',
+    'FA2': '../assets/audio/14_I.wav',
+    'SOL3': '../assets/audio/15_K.wav',
   };
 
+
+
+  // Precargar archivos de audio
+  Object.keys(audioFiles).forEach((noteKey) => {
+    const audioElement = new Audio(audioFiles[noteKey]);
+    audioElement.load();
+  });
+
   const tubes = document.querySelectorAll('.tube');
+
+  function playAudio(audioFiles, noteKey) {
+    const audioElement = new Audio(audioFiles[noteKey]);
+    audioElement.play();
+  }
 
   tubes.forEach((tube) => {
     tube.addEventListener('click', function () {
@@ -33,54 +46,33 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+
+  //tubes.addEventListener('touchstart', function () {
+   // playAudio(note);
+  //});
+
+  document.addEventListener('keydown', function(event) {
+    let key;
+    if (event.key.length === 1) {
+      key = event.key.toUpperCase();
+    } else {
+      key = event.key;
+    }
+
+    if (audioFiles[key]) {
+      playAudio(audioFiles, key);
+    }
+  });
+
+  
+// Función para manejar eventos de teclado
+/*function handleKeyPress(event) {
+const key = event.key.toLowerCase();
+  console.log(key);
+  if (audioFiles[key]) {
+  playAudio(key);
+}
+}
+
+document.addEventListener('keydown', handleKeyPress);*/
 });
-
-// let mediaElem = document.getElementById("A");
-// console.log(mediaElem);
-
-// mediaElem.load();
-
-// function playAudio() {
-//   return new Promise((resolve, reject) => {
-//     const tuboA = document.getElementById("A");
-
-//     // Agregué el cierre de paréntesis y corregí el evento 'loadeddata'
-//     tuboA.addEventListener("loadeddata", function() {
-//       console.log("probando");
-//       // Puedes agregar más lógica aquí si es necesario antes de resolver
-//       resolve(tuboA);
-//     });
-
-//   });
-// }
-
-
-//   const audio = new Audio(audioFiles[note]);
-//   audio.play();
-
-// const tubes = document.querySelectorAll('.tube');
-
-// // Agregar eventos a los tubos
-// tubes.forEach((tube) => {
-//   const note = tube.dataset.key;
-//   tube.addEventListener('mouseover', function () {
-//     console.log("Hola MUndo");
-//     playAudio(note);
-//   });
-
-// tube.addEventListener('touchstart', function () {
-//     playAudio(note);
-//   });
-// });
-
-// // Función para manejar eventos de teclado
-// function handleKeyPress(event) {
-//   const key = event.key.toLowerCase();
-//   console.log(key);
-//   if (audioFiles[key]) {
-//     playAudio(key);
-//   }
-// }
-
-
-// document.addEventListener('keydown', handleKeyPress);

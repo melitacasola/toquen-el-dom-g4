@@ -104,8 +104,6 @@ main h1 {
     display: flex;
     margin-top: 1.8rem;
     gap: 2.355rem;
-    margin-left: 2.5rem;
-
     z-index: 1;
     position: relative;
 }
