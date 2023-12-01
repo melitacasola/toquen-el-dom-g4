@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
   function playAudio(audioFiles, noteKey) {
     const audioElement = new Audio(audioFiles[noteKey]);
     audioElement.play();
+    console.log(audioElement);
   }
 
   tubes.forEach((tube) => {
@@ -32,8 +33,11 @@ document.addEventListener('DOMContentLoaded', function() {
       const noteKey = tube.dataset.key;
       const audioElement = document.getElementById(noteKey);
       
+      
       if (audioElement) {
         audioElement.play();
+        console.log(noteKey);
+        console.log(audioElement + "raro");
       } else {
         console.error(`Elemento de audio no encontrado para la nota: ${noteKey}`);
       }
@@ -45,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let key;
     if (event.key.length === 1) {
       key = event.key.toUpperCase();
+      console.log(key);
     } else {
       key = event.key;
     }
