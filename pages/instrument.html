@@ -8,12 +8,11 @@
     <link rel="stylesheet" href="../assets/css/instrument.css">
     <link rel="stylesheet" href="../assets/css/tubes.css">
 
-    <link rel="icon" href="./assets/img/google-logo.png" type="image/png">
-    <link rel="icon" href="./assets/img/google-logo.png" type="image/png">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js">
     </script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 </head>
 <body>
     <header>
@@ -48,7 +47,7 @@
             <div class="panfluteSet">
                 <div class="panflute">
                     <ul class="panfluteTubes">
-                        <li class="tube one" data-key="a"></li>
+                        <li class="tube one" data-key="a"><audio id="A" src="../assets/audio/01_A.wav"></audio> </li>
                         <li class="tube two" data-key="w"></li>
                         <li class="tube three" data-key="s"></li>
                         <li class="tube four" data-key="e"></li>
@@ -69,7 +68,7 @@
                 <div class="panfluteBox">
                     <div class="notesBox">
                         <ul class="notesBox-text">
-                            <li>SOL</li>
+                            <li><audio></audio>SOL</li> 
                             <li>LA</li>
                             <li>SI</li>
                             <li>DO</li>
@@ -102,7 +101,7 @@
                             <li>H</li>
                             <li>U</li>
                             <li>J</li>
-                            <li>I</li>
+                            <li>I<A/li>
                             <li>K</li>
                         </ul>
                         <div class="rectangleBottom"></div>
@@ -146,7 +145,7 @@
                 </section>
 
                 <!-- ------------- VIDEOS RELACIONADOS ------------- -->
-                <section class="videoSection">
+               <section class="videoSection">
                     <h3>Videos relacionados</h3>
                     <br>
                     <div class="justVideos">
@@ -181,6 +180,6 @@
             <p><a href="#"> Correo electrónico</a></p>
         </div>
     </footer>
-    <script src="sounds.js"></script>
+    <script src="../assets/js/sounds.js"></script>
 </body>
 </html>
