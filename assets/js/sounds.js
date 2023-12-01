@@ -1,31 +1,24 @@
 //sounds.js
-
 document.addEventListener('DOMContentLoaded', function() {
+
   const audioFiles = {
-    'SOL': '../assets/audio/01_A.wav',
-    'LA': '../assets/audio/02_W.wav',
-    'SI': '../assets/audio/03_S.wav',  
-    'DO': '../assets/audio/04_E.wav',
-    'RE': '../assets/audio/05_D.wav',
-    'MI': '../assets/audio/06_R.wav',
-    'FA': '../assets/audio/07_F.wav',
-    'SOL2': '../assets/audio/08_T.wav',
-    'LA2': '../assets/audio/09_G.wav',
-    'SI2': '../assets/audio/10_Y.wav',
-    'DO2': '../assets/audio/11_H.wav',
-    'RE2': '../assets/audio/12_U.wav',
-    'MI2': '../assets/audio/13_J.wav',
-    'FA2': '../assets/audio/14_I.wav',
-    'SOL3': '../assets/audio/15_K.wav',
+    '1': '../assets/audio/01_A.wav',
+    '2': '../assets/audio/02_W.wav',
+    '3': '../assets/audio/03_S.wav',  
+    '4': '../assets/audio/04_E.wav',
+    '5': '../assets/audio/05_D.wav',
+    '6': '../assets/audio/06_R.wav',
+    '7': '../assets/audio/07_F.wav',
+    '8': '../assets/audio/08_T.wav',
+    '9': '../assets/audio/09_G.wav',
+    '0': '../assets/audio/10_Y.wav',
+    'Q': '../assets/audio/11_H.wav',
+    'W': '../assets/audio/12_U.wav',
+    'E': '../assets/audio/13_J.wav',
+    'R': '../assets/audio/14_I.wav',
+    'T': '../assets/audio/15_K.wav',
   };
 
-
-
-  // Precargar archivos de audio
-  Object.keys(audioFiles).forEach((noteKey) => {
-    const audioElement = new Audio(audioFiles[noteKey]);
-    audioElement.load();
-  });
 
   const tubes = document.querySelectorAll('.tube');
 
@@ -47,9 +40,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  //tubes.addEventListener('touchstart', function () {
-   // playAudio(note);
-  //});
 
   document.addEventListener('keydown', function(event) {
     let key;
@@ -58,21 +48,12 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
       key = event.key;
     }
-
+  
     if (audioFiles[key]) {
       playAudio(audioFiles, key);
+    } else {
+      console.error(`Elemento de audio no encontrado para la tecla: ${key}`);
     }
   });
 
-  
-// Función para manejar eventos de teclado
-/*function handleKeyPress(event) {
-const key = event.key.toLowerCase();
-  console.log(key);
-  if (audioFiles[key]) {
-  playAudio(key);
-}
-}
-
-document.addEventListener('keydown', handleKeyPress);*/
 });
