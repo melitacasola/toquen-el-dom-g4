@@ -170,6 +170,10 @@ main h1 {
     flex: 1;
 }
 
+.instruSection p {
+    text-align: justify;
+}
+
 /* ----------- VIDEOS RELACIONADOS ----------- */
 .videoSection {
     margin-left: 3rem;
@@ -257,7 +261,6 @@ main h1 {
     }
 
 }
-
 /* @media screen and (max-width: 768px), (orientation: landscape) {
     .panflute {
         width: 34rem;
