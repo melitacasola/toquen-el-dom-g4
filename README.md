@@ -7,13 +7,30 @@ El proyecto incluye:<br><br>
 
 - **💐 Home**, una página principal con la presentación de la escuela. Contiene la galería de instrumentos: el piano, la guitarra, la batería y la flauta pan.<br>
 - **🌻 Flauta Pan**, redirecciona a la flauta pan para encontrar documentación sobre los primeros pasos para tocar este instrumento e información adicional.<br>La flauta pan es visualmente atractiva y creativa, y puedes tocarla con el mouse o el teclado. Disfruta tocando la flauta pan de manera repetida, tantas veces como desees.<br>
-- **🌹 About us**, conoce a nuestro equipo a través de imágenes que los presentan como artistas, junto con breves descripciones de cada miembro.<br>
+- **🏵️ About us**, conoce a nuestro equipo a través de imágenes que los presentan como artistas, junto con breves descripciones de cada miembro.<br>
 - **🌹 Construcción**, explora la sección "En construcción" para ver instrumentos que estamos desarrollando. Cada uno te llevará a una página dedicada al instrumento no desarrollado.<br>
 
-**Tecnologia usada:**
-Estructura-HTML<br>
-Estilos-CSS<br>
-Funcionalidades-JavaScript<br>
+**🍄 Tecnologia y metodologia implementada: 🍄**
+- Estructura-HTML
+- Estilos-CSS
+- Funcionalidades-JavaScript
+- Vitest / Jest
+- Flex
+- GitFlow<br><br>
+
+Marcos de trabajo Kanban y Scrum
+Ágiles
+Atomic Design
+
+**Herramientas**
+
+1. Github
+2. Visual Studio Code
+3. Figma
+4. Trello
+5. Scrum Poker
+
+
 
  ## 🧬 Instalación
 1. Debe tener instalado Visual Studio Code<br>
@@ -29,6 +46,6 @@ Para preguntas o asistencia, no dudes en contactarnos:
 - 🦄 Johanna Cuevas:<br> [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/johanna-cuevas-5b7983299/)<br>
 - 🍭 Daniella Cardona: <br>[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/melissa-casola)<br>
 - 🌈 Arleny Medina: <br>[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/stefania-georgescu-602700112/)<br>
-- 🍀 Stefania Gorgescu: [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/melissa-casola)<br>
+- 🍀 Stefania Gorgescu:<br> [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/melissa-casola)<br>
 - 🍩 Melissa Casola:<br> [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/melissa-casola)<br>
 - 🍬 Gabriela Irimia: <br>[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/melissa-casola)<br>
