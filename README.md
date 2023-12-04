@@ -11,24 +11,24 @@ El proyecto incluye:<br><br>
 - **🌹 Construcción**, explora la sección "En construcción" para ver instrumentos que estamos desarrollando. Cada uno te llevará a una página dedicada al instrumento no desarrollado.<br>
 
 **Tecnologia usada:**
-Estructura-HTML
-Estilos-CSS
-Funcionalidades-JavaScript
+Estructura-HTML<br>
+Estilos-CSS<br>
+Funcionalidades-JavaScript<br>
 
- ### Instalación
-Clonación del Repositorio con el comando:
- git clone https://github.com/01joanna/toquen-el-dom-g4.git
- **Ejecución local**
- •	Abre el archivo index.html en tu navegador web para acceder a la página principal.
-•	Explora las diferentes secciones, haz clic en los instrumentos y disfruta de la interactividad.
+ ## 🧬 Instalación
+1. Debe tener instalado Visual Studio Code<br>
+2. Clonación del Repositorio con el comando:
+ > git clone https://github.com/01joanna/toquen-el-dom-g4.git
+3. Abre el archivo index.html en tu navegador web para acceder a la página principal.
+4. Explora las diferentes secciones, haz clic en los instrumentos y disfruta de la interactividad.
 
-**✨ Profesoras**
+## ✨ Profesoras
 Para preguntas o asistencia, no dudes en contactarnos:
 - Correo electrónico, o bien de manera individual en:
 
-Johanna Cuevas [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/johanna-cuevas-5b7983299/)<br>
-Daniella Cardona [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/melissa-casola)<br>
-Arleny Medina [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/stefania-georgescu-602700112/)<br>
-Stefania Gorgescu [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/melissa-casola)<br>
-Melissa Casola [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/melissa-casola)<br>
-Gabriela Irimia [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/melissa-casola)<br>
+- 🦄 Johanna Cuevas:<br> [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/johanna-cuevas-5b7983299/)<br>
+- 🍭 Daniella Cardona: <br>[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/melissa-casola)<br>
+- 🌈 Arleny Medina: <br>[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/stefania-georgescu-602700112/)<br>
+- 🍀 Stefania Gorgescu: [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/melissa-casola)<br>
+- 🍩 Melissa Casola:<br> [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/melissa-casola)<br>
+- 🍬 Gabriela Irimia: <br>[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/melissa-casola)<br>
