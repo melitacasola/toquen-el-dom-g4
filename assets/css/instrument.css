@@ -178,6 +178,10 @@ main h1 {
     flex: 1;
 }
 
+.instruSection p {
+    text-align: justify;
+}
+
 /* ----------- VIDEOS RELACIONADOS ----------- */
 .videoSection {
     margin-left: 3rem;
