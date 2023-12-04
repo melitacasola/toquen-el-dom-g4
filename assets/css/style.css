@@ -402,42 +402,72 @@ a {
     .hmText {
         display: flex;
         flex-direction: column;
-        width: 80%;
-        padding: 2rem;
+        width: auto;
+        padding: 0;
+        align-items: baseline;
     }
 
     .hmDescriptive {
         font-size: 90%;
+        padding: 0.5rem;
     }
 
     .hmDescriptive h1{
-        font-size: 50px;
+        font-size: 3rem;
+        margin: 1rem;
     }
     .hmDescriptive h2{
-        font-size: 18px;
-        padding-left: 20px;
+        font-size: 1rem;
         text-align: center;
+        padding-left: 0;
     }
 
     .hmText p{
         margin: 1rem;
     }
+    .hmImage{
+        width: 80%;
+        display: flex;
+
+    }
 
     .hmImage img{
         width: 100%;
-        margin: 20px 0;
+        margin: 1rem 0;
+        height: auto;
     }
 
     /* -----CARROUSEL----- */
-    .container {
-        width: 90%;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        /* padding: 20px; */
     }
-    .carouselSection img{
-        width: 20rem;
+    
+    .carouselContainer {
+        position: relative;
+        width: 25rem;
+        /* overflow: hidden; */
     }
-
-    .carouselSlide{
-        width: 20rem;
+    
+    .carouselSlide {
+        width: 400%;
+        display: flex;
+        justify-content: space-between;
+        gap: 0
+    }
+    
+    .carouselSection{
+        width: calc(100% /4);
+        height: 100%;
+        
+    }
+    
+    .carouselSection img {
+        width: 25rem;
+        height: 90%;
+        object-fit: cover;
     }
 
 
