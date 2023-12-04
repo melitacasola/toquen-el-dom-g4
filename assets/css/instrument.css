@@ -256,8 +256,7 @@ main h1 {
     }
 
 }
-
-@media screen and (max-width: 768px), (orientation: landscape) {
+/* @media screen and (max-width: 768px), (orientation: landscape) {
     .panflute {
         width: 34rem;
     }
@@ -303,4 +302,4 @@ main h1 {
         display: none;
     }
 
-}
+} */
