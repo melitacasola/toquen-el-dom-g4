@@ -11,10 +11,10 @@
     --color-brown: #D8B28E;
     --color-yellow: #F8BE71;
     --color-green: #59BB88;
-    --font-h1-d: 700 80px 'Solway', sans-serif;      
+    --font-h1-d: 700 4rem 'Solway', sans-serif;      
 	--font-h2-d: 300 30px 'Solway', sans-serif;
 	--font-h3-d: 300 20px 'Solway', sans-serif;
-	--font-p-d: 300 20px 'Solway', sans-serif;
+	--font-p-d: 300 1.5rem 'Solway', sans-serif;
 }
 
 * {
@@ -115,13 +115,13 @@ header {
 
 .hmDescriptive h1{
     font-family: 'Oliver', sans-serif;
-    font-size: 86px;
+    font-size: 4rem;
     flex: 1;
 }
 
 .hmDescriptive h2 {
     font-family: 'Oliver', sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     padding-left: 2rem;
     flex: 1;
 }
@@ -129,7 +129,7 @@ header {
 .hmDescriptive p{
     text-align: justify;
     margin: 2rem;
-    font-size: 24px;
+    font-size: 1.5rem;
     flex: 1;
 }
 .hmText {
@@ -279,18 +279,33 @@ header {
     text-align: center;
     padding: 3rem;
 }
+
+.constructionImage{
+    display: flex;
+    justify-content: space-around;
+
+}
 .constructionImage img {
-    max-width: 15rem;
-    margin-left: 2.8rem;
+    width: 25rem;
 }
 
-.constructionDesc i{
+/* .constructionDesc  {
     margin: 1.5rem 1rem 2.5rem;
     font-size: 7.5rem;
     color: #ff765a;
     margin-left: 2.8rem;
-
+} */
+.fas.fa-triangle-exclamation{
+    margin: 2.5rem;
+    font-size: 12rem;
+    color: #ff765a;
 }
+.fas.fa-arrow-left{
+    font-size: 8rem;
+    color: #ff765a;
+    margin-top: 1.5rem;
+}
+
 .constructionText h1{
     font-family: 'Oliver', sans-serif;
     font-size: 4rem;
@@ -298,15 +313,14 @@ header {
     
 }
 
-.constructionText  p p{
-    margin: 2rem;
-    
-
+.constructionText p{
+    margin: 1rem;
+    font-size: 1.5rem;
 }
 
 .constructionText, .back-icon i {
     cursor: pointer;
-    margin: 0.7rem;
+    margin: 0.5rem;
 }
 
 
@@ -361,7 +375,7 @@ a {
         display: block;
         position: absolute;
         color: var(--color-beage);
-        font-size: 50px;
+        font-size: 3rem;
         margin-left: 307px;
         margin-top: 10px;
     }
@@ -509,36 +523,47 @@ a {
 
 
     /* ------CONSTRUCCION------ */
+    .constructionMain{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 1rem;
+    }
     .constructionImage img {
         padding-bottom: 0;
-        width: 100%;
+        width: 20rem;
+        margin: 2rem 0
     }
 
     .piano, .guitarra {
         display: none;
     }
+
     .constructionDesc {
         margin: 0;
     }
 
     .constructionDesc i{
-        font-size: 40px;
+        margin: 1.5rem;
+        font-size: 10rem;
     }
+
     .constructionText {
-    font-size: 1rem;
+    font-size: 1.5rem;
     width: 100%;
     text-align: center;
 
     }
     .constructionText h1 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
-
-    .btnBack {
-        padding: 0.3rem;
-        border-radius: 20px;
-        margin: 3rem;
-    }
+    
+    #btnBack {
+        /* padding: 0.3rem; */
+        font-size: 6rem;
+    } 
 
 
     /* ------FOOTER------ */

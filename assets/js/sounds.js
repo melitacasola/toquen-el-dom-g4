@@ -61,4 +61,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
+
+  /* ----EVENTO MENU DESPLEGABLE------*/  
+  const menuIcon = document.getElementById("menuBurger");
+  const menu = document.getElementById("menu");
+
+  menuIcon.addEventListener('click', function () {
+      menu.classList.toggle("show");
+  });
+
 });
