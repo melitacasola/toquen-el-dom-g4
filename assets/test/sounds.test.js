@@ -12,7 +12,7 @@ test('En sounds.js - handleTubeClick debería existir', () => {
   expect(handleTubeClick).to.be.a('function');
 });
 
-test('sounds.js - la funcuin handleKeyPress deberia existir', () => {
+test('sounds.js - la funcion handleKeyPress deberia existir', () => {
   expect(handleKeyPress).to.be.a('function');
 });
 
