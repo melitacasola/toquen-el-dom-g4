@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const slider = document.querySelector("#slider");
     const sliderSection = document.querySelectorAll(".carouselSection");
 
+    
     let currentSlide = 1;
     let widthImg = 155 / sliderSection.length;
 
@@ -29,11 +30,23 @@ document.addEventListener("DOMContentLoaded", function () {
         currentSlide = sliderSection.length;
         }
 
+        if (window.innerWidth <= 768) {
+            // Si es un dispositivo móvil, ajusta el valor de widthImg dividiéndolo por 100
+            widthImg = 100 / sliderSection.length;
+        } else {
+            // Si no es un dispositivo móvil, usa el valor original
+            widthImg = 155 / sliderSection.length;
+        }
+
         let newTransformValue = -(widthImg * (currentSlide - 1)) + '%';
     
         slider.style.transform = `translateX(${newTransformValue})`;
         slider.style.transition = "all ease .6s";
     }
+    showSlide();
+    
+    // Llamar a la función showSlide cuando cambia el tamaño de la ventana
+    window.addEventListener('resize', showSlide);
 
     /* ----EVENTO MENU DESPLEGABLE------*/
     const menuIcon = document.getElementById("menuBurger");
