@@ -225,6 +225,13 @@ main h1 {
         margin-bottom: 3rem;
         margin-right: 3rem;
     }
+    .iconRotate img {
+        width: 5.5rem;
+        position: absolute;
+        top: 30rem;
+        
+    }
+
     .firstSection {
         flex-direction: column;
         align-items: center;
@@ -298,6 +305,14 @@ main h1 {
         margin-bottom: 3rem;
         margin-right: 6rem;
     }
+
+    .iconRotate img {
+        width: 7rem;
+        position: absolute;
+        top: 40rem;
+        
+    }
+
     .firstSection {
         flex-direction: column;
         align-items: center;
