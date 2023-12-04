@@ -1,0 +1,329 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Solway:wght@300;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/oliver-2');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+
+:root {
+    --color-orange: #FF765A;
+    --color-green-black: #213D49;
+    --color-beage: #FCF5ED;
+    --color-brown: #D8B28E;
+    --color-yellow: #F8BE71;
+    --color-green: #59BB88;
+    --font-h1-d: 700 80px 'Solway', sans-serif;      
+	--font-h2-d: 300 30px 'Solway', sans-serif;
+	--font-h3-d: 300 20px 'Solway', sans-serif;
+	--font-p-d: 300 20px 'Solway', sans-serif;
+}
+
+* {
+	text-decoration: none;
+}
+
+body {
+    font-family: 'Solway', sans-serif;
+    background: var(--color-beage);
+}
+
+/* HEADER */
+header {
+    background-color: var(--color-yellow);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titleLogo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bigTitle {
+    font-family: 'Oliver', sans-serif;
+    font-size: 1.8rem;
+    margin-left: 0.9rem;
+    margin-top: 1rem;
+}
+.smallTitle {
+    font-family: 'Oliver', sans-serif;
+    font-size: 0.8rem;
+    margin-left: 2rem;
+}
+.logo {
+    margin-left: 50px;
+}
+.logo img {
+    max-height: 70px; 
+}
+.navList {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.menu{
+    display: flex;
+}
+.navList ul li {
+    margin-right: 30px;
+}
+.navHeader1{
+    margin-right: 2.5em;
+    color: var(--color-green-black);
+    padding: 0.3em 1em;
+    background-color: var(--color-beage);
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+} 
+.navHeader{
+    color: var(--color-green-black);
+    padding: 0.3em 1em;
+    background-color: var(--color-beage);
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    
+} 
+.navList ul li a:hover {
+    background-color: var(--color-brown);
+}
+
+.menuBurger {
+    display: none;
+}
+/* pagina Nosotras*/
+
+.aboutDescriptive {
+    text-align: center;
+    font-family: Solway, sans-serif;
+    padding: 4.6rem;
+    width: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+.aboutDescriptive h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: oliver, sans-serif;
+}
+#generalText {
+    display: flex;
+    width: 80rem;
+    height: 19rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.teachers {
+    display: flex;
+    padding: 1rem 10.5rem;
+    align-items: flex-start;
+    gap: 1px;
+
+}
+
+.teacher {
+        width: 200px;
+        margin: 1px;
+        position: relative;
+}
+
+.teacher img {
+    width: 100%;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.teacher p {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    text-align: center;
+}
+
+#teacher1{
+    color:#26B334
+}
+#teacher2{
+    color:#E724EB
+}
+#teacher3{
+    color:#EB5424
+}
+#teacher4{
+    color:#7A78E9
+}
+#teacher5{
+    color:#35763C
+}
+#teacher6{
+    color:#36B7B7
+}
+
+#teacher5{
+    color:#35763C
+}
+#teacher6{
+    color:#36B7B7
+}
+
+/* footer */
+footer {
+    background-color: var(--color-yellow);
+    padding: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    font-family: "Space Mono", sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.socialNetworks {
+    margin-left: 2rem;
+}
+.socialNetworks i {
+        margin-left: 0.3rem;
+    font-size: 16px;
+
+}
+
+.termsConditions {
+    width: 40rem;
+    display: flex;
+    background-color: var(--color-yellow);
+    justify-content: space-around;
+
+}
+
+.contact {
+    display: flex;
+    margin-right: 2em;
+    width: 14rem;
+    justify-content: space-around;
+
+}
+/*--------------------- MEDIA QUERIES ---------------------- */
+@media screen and (max-width: 768px) {
+    /* --------HEADER--------- */
+
+    .menuBurger {
+        display: block;
+        position: absolute;
+        color: var(--color-beage);
+        font-size: 50px;
+        margin-left: 307px;
+        margin-top: 10px;
+    }
+    .logo img{
+        width: 90%;
+    }
+    .titleHeader {
+        display: none; 
+    }
+    .menu {
+        display: none;
+        position: fixed;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        top: 80px;
+        position: absolute;
+    }
+    
+    .menu.show{
+        display: block;
+    }
+    
+    .navList ul li {
+        background-color: var(--color-yellow);
+        padding: 30px;
+        font-size: 20px;
+    }
+
+    .navHeader, .navHeader1 {
+        background-color: var(--color-yellow);
+        text-align: center;
+    }
+    /* ------MAIN------ */
+    .hmText {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        padding: 2rem;
+        
+
+    }
+
+    .hmDescriptive {
+        font-size: 90%;
+    }
+
+    .hmDescriptive h1{
+        font-size: 50px;
+    }
+    .hmDescriptive h2{
+        font-size: 18px;
+        padding-left: 20px;
+        text-align: center;
+    }
+
+    .hmText p{
+        margin: 1rem;
+    }
+
+    .hmImage img{
+        width: 100%;
+        margin: 20px 0;
+    }
+     /* ------SOBRE NOSOTRAS------ */
+    .aboutDescriptive h1 {
+        font-size: 2rem;
+        order: 0; /* El título h1 va primero */
+    }
+    
+    .teacher img {
+        height: 10rem;
+        width: 10rem;
+        order: 1; /* Las imágenes van después del título h1 */
+        }
+    
+    .teachers {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .teacher p {
+        text-align: center;
+        order: 2; /* Los párrafos van después de las imágenes */
+    }
+        /* ------FOOTER------ */
+    .socialNetworks i{
+        font-size: 15px;
+
+    }
+    .termsConditions {
+        display: none;
+    }
+
+    .contact {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 0;
+    }
+}
+

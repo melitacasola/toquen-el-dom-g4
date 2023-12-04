@@ -1,11 +1,10 @@
-// Solo se ejecutará si el ancho de la pantalla es mayor que 768px
 if (matchMedia('(min-width: 768px)').matches) {
-    // Aquí puedes poner el código JavaScript que quieras ejecutar
+
     const images = document.querySelectorAll(".teacher img");
     const paragraphs = document.querySelectorAll(".teacher p");
 
     const generalText = document.getElementById("generalText");
-    const header = document.querySelector(".hmDescriptive h1");
+    const header = document.querySelector(".aboutDescriptive h1");
 
     generalText.dataset.original = generalText.innerHTML;
 
@@ -24,13 +23,16 @@ if (matchMedia('(min-width: 768px)').matches) {
         image.classList.toggle("selected");
 });
     });
-    // Añadir un evento de clic al encabezado
-    header.addEventListener("click", function() {
-generalText.innerHTML = generalText.dataset.original;
-      // Restaurar el color y el enfoque de todas las imágenes
-images.forEach(function(image) {
-        image.style.setProperty("filter", "none");
-        image.classList.toggle("selected");
-});
+    // Añadir un evento de clic al documento
+    document.addEventListener("click", function(event) {
+        // Comprobar si el elemento clicado es una imagen o no
+        if (!event.target.matches(".teacher img")) {
+            // Restaurar el texto principal y las fotos al estado original
+            generalText.innerHTML = generalText.dataset.original;
+            images.forEach(function(image) {
+                image.style.setProperty("filter", "none");
+                image.classList.toggle("selected");
+            });
+        }
     });
 }
