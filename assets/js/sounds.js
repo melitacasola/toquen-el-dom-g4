@@ -1,6 +1,5 @@
 //sounds.js
 document.addEventListener('DOMContentLoaded', function() {
-
   const audioFiles = {
     '1': '../assets/audio/01_A.wav',
     '2': '../assets/audio/02_W.wav',
@@ -19,55 +18,61 @@ document.addEventListener('DOMContentLoaded', function() {
     'T': '../assets/audio/15_K.wav',
   };
 
-
   const tubes = document.querySelectorAll('.tube');
 
-  function playAudio(audioFiles, noteKey) {
+  function playAudio(noteKey) {
     const audioElement = new Audio(audioFiles[noteKey]);
     audioElement.play();
     console.log(audioElement);
   }
 
-  tubes.forEach((tube) => {
-    tube.addEventListener('click', function () {
-      const noteKey = tube.dataset.key;
-      const audioElement = document.getElementById(noteKey);
-      
-      
-      if (audioElement) {
-        audioElement.play();
-        console.log(noteKey);
-        console.log(audioElement + "raro");
-      } else {
-        console.error(`Elemento de audio no encontrado para la nota: ${noteKey}`);
-      }
-    });
-  });
+  function handleTubeClick(tube) {
+    const noteKey = tube.dataset.key;
+    const audioElement = document.getElementById(noteKey);
 
-
-  document.addEventListener('keydown', function(event) {
-    let key;
-    if (event.key.length === 1) {
-      key = event.key.toUpperCase();
-      console.log(key);
+    if (audioElement) {
+      audioElement.play();
+      console.log(noteKey);
+      console.log(audioElement + "raro");
     } else {
-      key = event.key;
+      console.error(`Elemento de audio no encontrado para la nota: ${noteKey}`);
     }
-  
+  }
+
+  function handleKeyPress(event) {
+    let key = event.key.length === 1 ? event.key.toUpperCase() : event.key;
+
     if (audioFiles[key]) {
-      playAudio(audioFiles, key);
+      playAudio(key);
     } else {
       console.error(`Elemento de audio no encontrado para la tecla: ${key}`);
     }
+  }
+
+  function handleTubeTouchStart(e) {
+    console.log(e);
+    const tubes = document.querySelectorAll('.tube');
+
+    tubes.forEach((tube) => {
+      tube.addEventListener('click', () => handleTubeClick(tube));
+    });
+  }
+
+  tubes.forEach((tube) => {
+    tube.addEventListener('click', () => handleTubeClick(tube));
   });
 
+  document.addEventListener('keydown', handleKeyPress);
+  document.addEventListener('touchstart', handleTubeTouchStart);
 
-  /* ----EVENTO MENU DESPLEGABLE------*/  
-  const menuIcon = document.getElementById("menuBurger");
-  const menu = document.getElementById("menu");
 
-  menuIcon.addEventListener('click', function () {
-      menu.classList.toggle("show");
-  });
+
+/* ----EVENTO MENU DESPLEGABLE------*/  
+const menuIcon = document.getElementById("menuBurger");
+const menu = document.getElementById("menu");
+
+menuIcon.addEventListener('click', function () {
+    menu.classList.toggle("show");
+});
 
 });
