@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "vitest": "^0.34.6"
+  },
+  "scripts": {
+    "test": "vitest"
+  },
+  "type": "module",
+  "dependencies": {
+    "play-sound": "^1.1.6"
+  }
+}
