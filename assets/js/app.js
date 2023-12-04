@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const sliderSection = document.querySelectorAll(".carouselSection");
 
     let currentSlide = 1;
-    let widthImg = 100 / sliderSection.length;
+    let widthImg = 155 / sliderSection.length;
 
     if(btnLeft){
         btnLeft.addEventListener('click', () => moveSlide(-1));
