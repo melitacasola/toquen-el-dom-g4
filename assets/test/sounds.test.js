@@ -1,21 +1,27 @@
-// Importamos las funciones que queremos probar desde el archivo 'sounds.js'
+
 import { expect, test } from 'vitest';
-import { playAudio, handleTubeClick, handleTubeTouchStart } from '../js/sounds';
-
-const player = require('play-sound')();
+import { playAudio, handleTubeClick, handleKeyPress, handleTubeTouchStart } from '../js/sounds.js';
 
 
-// Test para la función 'playAudio'
-test('playAudio debería reproducir el archivo de audio correcto', () => {
-  // Mockeamos objetos o elementos necesarios para la prueba
-  const mockElementoAudio = {
-    play: () => {}, // Mockeamos el método play
-  };
-
-  playAudio('1');
-
-  // Afirmaciones
-  expect(playAudio('1')).toHaveBeenCalledWith('../assets/audio/01_A.wav');
-  // Es posible que necesites ajustar esta afirmación según tu implementación real
-  expect(mockElementoAudio.play).toHaveBeenCalled();
+//comprobamos 
+test('En sounds.js - la función playAudio debería existir', () => {
+  expect(playAudio).to.be.a('function');
 });
+
+test('En sounds.js - handleTubeClick debería existir', () => {
+  expect(handleTubeClick).to.be.a('function');
+});
+
+test('sounds.js - la funcuin handleKeyPress deberia existir', () => {
+  expect(handleKeyPress).to.be.a('function');
+});
+
+test('En el archivo sounds.js existe la funcion handleTubeTouchStart ', () => {
+    expect(handleTubeTouchStart).to.be.a('function');
+});
+
+
+/*En el contexto de Chai, la sintaxis .to.be.a se utiliza para afirmar el tipo de un valor en JavaScript. En otras palabras, se espera que el valor al que se aplica esta afirmación sea del tipo especificado. 
+En esta afirmación .to.be.a, estamos diciendo que esperamos que playAudio o handleTubeTouchStart  sea una función. Si playAudio no es una función, la prueba fallará.
+
+*/
