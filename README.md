@@ -1,7 +1,10 @@
-# Ecuela de Música Token el DOM
-## Descripción
-Bienvenido al repositorio Token el Dom, la plataforma musical que te sumerge en la experiencia de un instrumento único. Explora nuestro instrumento, aprende a tocarlo con nuestros tutoriales y descubre los emocionantes instrumentos que estamos construyendo para el futuro. Conoce al equipo detrás de Token el Dom y descubre nuestra pasión por la música
-## Contenido
+**🧃 Escuela de Música: TOQUEN EL DOM 🧃**
+## ¿Quiénes somos?
+Bienvenido al repositorio Toquen el DOM, el lugar para integrarse dentro de la plataforma musical que te sumerge en la experiencia de un instrumento único. Aprende nuevos instrumentos de manera didáctica y online, gracias a nuestros tutoriales de gran fácilidad y descubre los emocionantes instrumentos que estamos construyendo para el futuro. ¡Conoce al equipo detrás de Toquen el Dom y descubre nuestra pasión por la música!<br><br>
+
+Nuestro instrumento principal es la flauta de pan, ¡pero pronto podrás aprender de una nueva gama de instrumentos nuevos!
+
+## 💐 Nuestro contenido 💐
 **Home**
 Presentación: La página principal ofrece una breve presentación de la escuela de música.
 Galería de Instrumentos: Descubre nuestra selección de instrumentos, incluyendo piano, guitarra, batería y flauta pan.
@@ -27,9 +30,13 @@ Clonación del Repositorio con el comando:
  •	Abre el archivo index.html en tu navegador web para acceder a la página principal.
 •	Explora las diferentes secciones, haz clic en los instrumentos y disfruta de la interactividad.
 
-**Contacto**
+**✨ Profesoras**
 Para preguntas o asistencia, no dudes en contactarnos:
-- Correo electronico
+- Correo electrónico, o bien de manera individual en:
 
-**Licencia**
-Este proyecto esta bajó licencia MIT.
+Johanna Cuevas [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/johanna-cuevas-5b7983299/)
+Daniella Cardona [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/melissa-casola)
+Arleny Medina [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/stefania-georgescu-602700112/)
+Stefania Gorgescu [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/melissa-casola)
+Melissa Casola [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/melissa-casola)
+Gabriela Irimia [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/melissa-casola)

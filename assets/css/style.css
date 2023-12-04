@@ -11,10 +11,10 @@
     --color-brown: #D8B28E;
     --color-yellow: #F8BE71;
     --color-green: #59BB88;
-    --font-h1-d: 700 80px 'Solway', sans-serif;      
+    --font-h1-d: 700 4rem 'Solway', sans-serif;      
 	--font-h2-d: 300 30px 'Solway', sans-serif;
 	--font-h3-d: 300 20px 'Solway', sans-serif;
-	--font-p-d: 300 20px 'Solway', sans-serif;
+	--font-p-d: 300 1.5rem 'Solway', sans-serif;
 }
 
 * {
@@ -96,8 +96,8 @@ header {
 /* PÁGINA HOME */
 
 .hmImage img{
-    width: 30rem;
-    height: 27rem;
+    width: 25rem;
+    height: 25rem;
     border: 1px solid #000;
     padding: 20px;
     margin: 20px;
@@ -115,13 +115,13 @@ header {
 
 .hmDescriptive h1{
     font-family: 'Oliver', sans-serif;
-    font-size: 86px;
+    font-size: 4rem;
     flex: 1;
 }
 
 .hmDescriptive h2 {
     font-family: 'Oliver', sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     padding-left: 2rem;
     flex: 1;
 }
@@ -129,7 +129,7 @@ header {
 .hmDescriptive p{
     text-align: justify;
     margin: 2rem;
-    font-size: 24px;
+    font-size: 1.5rem;
     flex: 1;
 }
 .hmText {
@@ -148,37 +148,31 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 70%;
-    margin-left: 7rem;
-
+    margin-bottom: 3rem;
 }
 
 .carouselContainer {
     position: relative;
-    width: 70%;
     overflow: hidden;
+    width: 65%;    
 }
 
 .carouselSlide {
-    width: 115%;
-    /* height: 50vh; */
     display: flex;
     justify-content: space-between;
-    gap: 2.5rem
+    gap: 2.5rem;
+    object-fit: cover;
 }
 
 .carouselSection{
-    /* width: calc(100% /4); */
-    width: 100%;
+    width: 90%;
     height: 60%;
     object-fit: cover;
-
-
 
 }
 
 .carouselSection img {
-    width: 25rem;
+    width: 30rem;
     height: 90%;
     object-fit: cover;
 }
@@ -189,7 +183,7 @@ header {
     display: flex;
     position: absolute;
     top: 50%;
-    font-size: 1.5rem;
+    font-size: 2rem;
     border-radius: 50%;
     padding: 5px;
     background-color: transparent;
@@ -285,18 +279,33 @@ header {
     text-align: center;
     padding: 3rem;
 }
+
+.constructionImage{
+    display: flex;
+    justify-content: space-around;
+
+}
 .constructionImage img {
-    max-width: 15rem;
-    margin-left: 2.8rem;
+    width: 25rem;
 }
 
-.constructionDesc i{
+/* .constructionDesc  {
     margin: 1.5rem 1rem 2.5rem;
     font-size: 7.5rem;
     color: #ff765a;
     margin-left: 2.8rem;
-
+} */
+.fas.fa-triangle-exclamation{
+    margin: 2.5rem;
+    font-size: 12rem;
+    color: #ff765a;
 }
+.fas.fa-arrow-left{
+    font-size: 8rem;
+    color: #ff765a;
+    margin-top: 1.5rem;
+}
+
 .constructionText h1{
     font-family: 'Oliver', sans-serif;
     font-size: 4rem;
@@ -304,15 +313,14 @@ header {
     
 }
 
-.constructionText  p p{
-    margin: 2rem;
-    
-
+.constructionText p{
+    margin: 1rem;
+    font-size: 1.5rem;
 }
 
 .constructionText, .back-icon i {
     cursor: pointer;
-    margin: 0.7rem;
+    margin: 0.5rem;
 }
 
 
@@ -367,7 +375,7 @@ a {
         display: block;
         position: absolute;
         color: var(--color-beage);
-        font-size: 50px;
+        font-size: 3rem;
         margin-left: 307px;
         margin-top: 10px;
     }
@@ -403,99 +411,159 @@ a {
         background-color: var(--color-yellow);
         text-align: center;
     }
+
     /* ------MAIN------ */
     .hmText {
         display: flex;
         flex-direction: column;
-        width: 80%;
-        padding: 2rem;
-        
-
+        width: auto;
+        padding: 0;
+        align-items: baseline;
     }
 
     .hmDescriptive {
         font-size: 90%;
+        padding: 0.5rem;
     }
 
     .hmDescriptive h1{
-        font-size: 50px;
+        font-size: 3rem;
+        margin: 1rem;
     }
     .hmDescriptive h2{
-        font-size: 18px;
-        padding-left: 20px;
+        font-size: 1rem;
         text-align: center;
+        padding-left: 0;
     }
 
     .hmText p{
         margin: 1rem;
     }
+    .hmImage{
+        width: 80%;
+        display: flex;
+
+    }
 
     .hmImage img{
         width: 100%;
-        margin: 20px 0;
+        margin: 1rem 0;
+        height: auto;
     }
 
     /* -----CARROUSEL----- */
-    .container {
-        width: 90%;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        /* padding: 20px; */
+    }
+    
+    .carouselContainer {
+        position: relative;
+        width: 25rem;
+        /* overflow: hidden; */
+    }
+    
+    .carouselSlide {
+        width: 400%;
+        display: flex;
+        justify-content: space-between;
+        gap: 0
+    }
+    
+    .carouselSection{
+        width: calc(100% /4);
+        height: 100%;
+        
+    }
+    
+    .carouselSection img {
+        width: 25rem;
+        height: 90%;
+        object-fit: cover;
     }
 
 
     /* ------SOBRE NOSOTRAS------ */
-    .hmDescriptive.aboutUs h1 {
-        font-size: 2rem;
-        order: 0; /* El título h1 va primero */
+    .hmDescriptive.aboutUs{
+        margin: 2.5rem;
+        padding: 2rem;
+        /* position: fixed; */
     }
-    
-    .teacher img {
-        height: 10rem;
-        width: 10rem;
-        order: 1; /* Las imágenes van después del título h1 */
-        }
-    
-      .teachers {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-    
-      .teacher p {
-        text-align: center;
-        order: 2; /* Los párrafos van después de las imágenes */
-      }
+
+    .hmDescriptive.aboutUs h1{
+        font-size: 2.5rem;
+    }
+
+    .teachers{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        margin: 1rem;
+        width: auto;
+    }
+
+    .teacher{
+        margin: 2rem 0;
+        padding: 0;
+        align-items: center;
+    }
+
+    .teacher img{
+        height: 20rem;
+    }
+
+    .teacher p{
+        text-align: justify;
+        margin: 1.5rem 0;
+        width: auto;
+    }
 
 
     /* ------CONSTRUCCION------ */
+    .constructionMain{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 1rem;
+    }
     .constructionImage img {
         padding-bottom: 0;
-        width: 100%;
+        width: 20rem;
+        margin: 2rem 0
     }
 
     .piano, .guitarra {
         display: none;
     }
+
     .constructionDesc {
         margin: 0;
     }
 
     .constructionDesc i{
-        font-size: 40px;
+        margin: 1.5rem;
+        font-size: 10rem;
     }
+
     .constructionText {
-    font-size: 1rem;
+    font-size: 1.5rem;
     width: 100%;
     text-align: center;
 
     }
     .constructionText h1 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
-
-    .btnBack {
-        padding: 0.3rem;
-        border-radius: 20px;
-        margin: 3rem;
-    }
+    
+    #btnBack {
+        /* padding: 0.3rem; */
+        font-size: 6rem;
+    } 
 
 
     /* ------FOOTER------ */
