@@ -250,32 +250,38 @@ header {
 /* ---------- página construcción --------------- */
 .constructionMain {
     text-align: center;
-    padding: 5rem;
+    padding: 3rem;
 }
 .constructionImage img {
-    max-width: 20rem;
-    padding-bottom: 2.5rem;
+    max-width: 15rem;
+    margin-left: 2.8rem;
 }
+
 .constructionDesc i{
-    font-size: 6rem;
-    margin: 1rem;
+    margin: 1.5rem 1rem 2.5rem;
+    font-size: 7.5rem;
     color: #ff765a;
+    margin-left: 2.8rem;
+
 }
 .constructionText h1{
     font-family: 'Oliver', sans-serif;
     font-size: 4rem;
-    margin: 1rem
+    margin: 1rem;
+    
 }
 
-.btnBack {
-    font-family: 'Solway', sans-serif;
-    background-color: var(--color-green-black);
-    color: white;
-    padding: 10px 30px;
-    border-radius: 20px;
-    margin: 3rem;
-    text-align: center;
+.constructionText  p p{
+    margin: 2rem;
+    
+
 }
+
+.constructionText, .back-icon i {
+    cursor: pointer;
+    margin: 0.7rem;
+}
+
 
 
 /* footer */
