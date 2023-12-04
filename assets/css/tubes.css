@@ -57,3 +57,66 @@
 .fifteen {
     height: 16rem;
 }
+
+/* ----------- MEDIA QUERIES ----------- */
+@media screen and (max-width: 768px) {
+    .one {
+        height: 23rem;
+    }
+    
+    .two {
+        height: 22rem;
+    }
+    
+    .three {
+        height: 21rem;
+    }
+    
+    .four {
+        height: 20rem;
+    }
+    
+    .five {
+        height: 19rem;
+    }
+    
+    .six {
+        height: 18rem;
+    }
+    
+    .seven {
+        height: 17rem;
+    }
+    
+    .eight {
+        height: 16rem;
+    }
+    
+    .nine {
+        height: 15rem;
+    }
+    
+    .ten {
+        height: 14rem;
+    }
+    
+    .eleven {
+        height: 13rem;
+    }
+    
+    .twelve {
+        height: 12rem;
+    }
+    
+    .thirteen {
+        height: 11rem;
+    }
+    
+    .fourteen {
+        height: 10rem;
+    }
+    
+    .fifteen {
+        height: 9rem;
+    }
+}

@@ -90,6 +90,7 @@ main h1 {
 .rectangleTop {
     width: 66rem;
     height: 0.25rem;
+
     background-color: var(--color-orange);
 
     bottom: 3.5rem;
@@ -213,11 +214,11 @@ main h1 {
 /* ----------- MEDIA QUERIES ----------- */
 @media screen and (max-width: 768px) {
     .panflute {
-        width: 34rem;
+        width: 24rem;
     }
 
     .panfluteBox {
-        width: 35rem;
+        width: 25rem;
     }
     .iconRotate {
         display: flex;
@@ -258,16 +259,19 @@ main h1 {
 
     .notesBox-text {
         margin-top: 1.8rem;
-        gap: 0.65rem;
+        gap: 0.4rem;
+        
     }
 
     .notesBox-text li {
-        width: 1.65rem;
+        width: 1.2rem;
+        font-size: 0.6rem;
     }
 
     .rectangleTop {
-        width: 35rem;
-        bottom: 2.2rem;
+        width: 25rem;
+        height: 0.15rem;
+        bottom: 2.3rem;
     }
 
     .keyboardBox {
@@ -280,7 +284,7 @@ main h1 {
 
 }
 /* media query para modo horizontal */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
     .panflute {
         width: 48rem;
 
