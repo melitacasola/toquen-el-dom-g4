@@ -118,6 +118,9 @@ main h1 {
     font-weight: 600;
     width: 2rem;
 }
+.iconRotate {
+    display: none;
+}
 
 .rectangleBottom {
     width: 66rem;
@@ -137,23 +140,19 @@ main h1 {
 }
 .info section{
     background: white;
-
     display: flex;
     flex-direction: column;
-
     border-radius: 0.5rem;
-
-    padding: 1.5rem 1.5rem 3rem 1.5rem;
+    padding: 1.5rem;
 }
 
 /* ----------- INFORMACIÓN INSTRUMENTO ----------- */
 
 .firstSteps, .firstTrack {
     flex: 1;
-    /* margin-left: 3rem; */
-    /* margin-right: 3rem; */
     margin-bottom: 2rem;
 }
+
 .firstTrack {
     margin-left: 3rem;
 }
@@ -167,7 +166,6 @@ main h1 {
 .secondSection, .firstSection {
     display: flex;
     justify-content: space-evenly;
-
     margin-left: 3rem;
     margin-right: 3rem;
 }
@@ -221,11 +219,32 @@ main h1 {
     .panfluteBox {
         width: 35rem;
     }
+    .iconRotate {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 3rem;
+        margin-right: 3rem;
+    }
+    .firstSection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .firstTrack {
+        margin-left: 0;
+    }
+
+    .firstSection{
+        display: block;
+    }
+
+    .firstTrack{
+        margin-left: 0;
+    }
 
     .secondSection {
         flex-direction: column;
         align-items: stretch;
-
         gap: 2rem;
     }
 
@@ -260,13 +279,32 @@ main h1 {
     }
 
 }
-/* @media screen and (max-width: 768px), (orientation: landscape) {
+/* media query para modo horizontal */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
     .panflute {
-        width: 34rem;
+        width: 48rem;
+
     }
 
     .panfluteBox {
-        width: 35rem;
+        width: 49rem;
+    }
+    .iconRotate {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 3rem;
+        margin-right: 6rem;
+    }
+    .firstSection {
+        flex-direction: column;
+        align-items: center;
+    }
+    .firstSteps {
+        margin-left: 0;
+    }
+
+    .firstTrack {
+        margin-left: 0;
     }
 
     .secondSection {
@@ -286,15 +324,16 @@ main h1 {
 
     .notesBox-text {
         margin-top: 1.8rem;
-        gap: 0.65rem;
+        gap: 0.8rem;
     }
 
     .notesBox-text li {
-        width: 1.65rem;
+        width: 2.4rem;
+        font-size: 1.2rem;
     }
 
     .rectangleTop {
-        width: 35rem;
+        width: 49rem;
         bottom: 2.2rem;
     }
 
@@ -305,5 +344,4 @@ main h1 {
     .rectangleBottom{
         display: none;
     }
-
-} */
+}
