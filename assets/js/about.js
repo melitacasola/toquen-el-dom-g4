@@ -4,7 +4,7 @@ if (matchMedia('(min-width: 768px)').matches) {
     const paragraphs = document.querySelectorAll(".teacher p");
 
     const generalText = document.getElementById("generalText");
-    const header = document.querySelector(".aboutDescriptive h1");
+    const header = document.querySelector(".aboutDescriptive h2");
 
     generalText.dataset.original = generalText.innerHTML;
 
