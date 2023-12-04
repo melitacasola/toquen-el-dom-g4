@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   document.addEventListener('keydown', handleKeyPress);
   document.addEventListener('touchstart', handleTubeTouchStart);
-});
+
 
 
 /* ----EVENTO MENU DESPLEGABLE------*/  
@@ -73,4 +73,6 @@ const menu = document.getElementById("menu");
 
 menuIcon.addEventListener('click', function () {
     menu.classList.toggle("show");
+});
+
 });
