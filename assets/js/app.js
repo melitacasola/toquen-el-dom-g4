@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentSlide = 1;
     let widthImg = 155 / sliderSection.length;
 
+
+
     if(btnLeft){
         btnLeft.addEventListener('click', () => moveSlide(-1));
     }
@@ -15,6 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
         btnRight.addEventListener('click', () => moveSlide(1));
         
     }
+
+
 
 
     function moveSlide(n) {
@@ -39,14 +43,19 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         let newTransformValue = -(widthImg * (currentSlide - 1)) + '%';
-    
-        slider.style.transform = `translateX(${newTransformValue})`;
-        slider.style.transition = "all ease .6s";
+        
+        if(slider){
+            slider.style.transform = `translateX(${newTransformValue})`;
+            slider.style.transition = "all ease .6s";
+
+        }
+        
     }
     showSlide();
     
     // Llamar a la función showSlide cuando cambia el tamaño de la ventana
     window.addEventListener('resize', showSlide);
+
 
     /* ----EVENTO MENU DESPLEGABLE------*/
     const menuIcon = document.getElementById("menuBurger");
@@ -56,13 +65,6 @@ document.addEventListener("DOMContentLoaded", function () {
         menu.classList.toggle("show");
     });
 
-    /*------- Btn Volver a pag principal -----*/
-    const backBtn = document.getElementById("btnBack"); 
-    if(backBtn){
-        backBtn.addEventListener('click', () => window.location.href = '../home.html')
-    }
-    
 })
 
-// ------------ OPCIÓN ORIENTACIÓN HORIZONTAL: PAGINA INSTRUMENTO -------------
 
