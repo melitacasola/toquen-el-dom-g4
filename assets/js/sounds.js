@@ -1,3 +1,4 @@
+// events.js
 export function playAudio(noteKey, audioFiles) {
   const audioElement = new Audio(audioFiles[noteKey]);
   audioElement.play();
@@ -8,7 +9,11 @@ export function handleTubeClick(tube) {
   const audioElement = document.getElementById(noteKey);
 
   if (audioElement) {
-    audioElement.play();
+    // Clona el elemento de audio para permitir la reproducción simultánea
+    const clonedAudioElement = audioElement.cloneNode(true);
+    
+    // Reproduce el sonido
+    clonedAudioElement.play();
   } else {
     console.error(`Elemento de audio no encontrado para la nota: ${noteKey}`);
   }
