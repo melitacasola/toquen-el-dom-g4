@@ -212,18 +212,25 @@ main h1 {
 
 /* ----------- MEDIA QUERIES ----------- */
 @media screen and (max-width: 768px) {
-    .panflute {
-        width: 24rem;
+    .panfluteSet{
+        margin: 0;
+        padding: 0;
     }
-
+    .panflute {
+        width: 23.5rem;
+    }
     .panfluteBox {
-        width: 25rem;
+        width: 24rem;
     }
     .iconRotate {
         display: flex;
         justify-content: flex-end;
         margin-bottom: 3rem;
         margin-right: 3rem;
+    }
+    .info section{
+        padding: 1.5rem;
+        margin: 0;
     }
     .iconRotate img {
         width: 5.5rem;
@@ -236,13 +243,9 @@ main h1 {
         flex-direction: column;
         align-items: center;
     }
-
+    
     .firstTrack {
         margin-left: 0;
-    }
-
-    .firstSection{
-        display: block;
     }
 
     .firstTrack{
@@ -275,7 +278,7 @@ main h1 {
     }
 
     .rectangleTop {
-        width: 25rem;
+        width: 24rem;
         height: 0.15rem;
         bottom: 2.3rem;
     }
@@ -291,9 +294,11 @@ main h1 {
 }
 /* media query para modo horizontal */
 @media only screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+    .titleHeader{
+        display: none;
+    }
     .panflute {
         width: 48rem;
-
     }
 
     .panfluteBox {
@@ -360,6 +365,11 @@ main h1 {
     }
 
     .rectangleBottom{
+        display: none;
+    }
+    
+    /* --- FOOTER ---*/
+    .termsConditions{
         display: none;
     }
 }
