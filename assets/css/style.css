@@ -105,7 +105,6 @@ header {
 }
 
 .hmDescriptive {
-    /* width: 39rem; */
     font-family: 'Solway', sans-serif;
     flex: 1;
     padding: 2rem;
@@ -213,10 +212,8 @@ header {
 .hmDescriptive {
     text-align: center;
 }
-.hmDescriptive h1 {
-    font-family: 'Oliver', sans-serif;
-    font-size: 4rem;
-}
+
+
 #generalText {
     text-align: justify;
     margin: 1rem;
