@@ -305,7 +305,7 @@ header {
     margin-top: 1.5rem;
 }
 
-.constructionText h1{
+.constructionText h2{
     font-family: 'Oliver', sans-serif;
     font-size: 4rem;
     margin: 1rem;
@@ -562,7 +562,7 @@ a {
     text-align: center;
 
     }
-    .constructionText h1 {
+    .constructionText h2 {
         font-size: 3rem;
     }
     
