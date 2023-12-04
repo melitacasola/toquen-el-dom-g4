@@ -63,3 +63,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     
 })
+
+// ------------ OPCIÓN ORIENTACIÓN HORIZONTAL: PAGINA INSTRUMENTO -------------
+
