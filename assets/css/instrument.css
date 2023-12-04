@@ -144,18 +144,16 @@ main h1 {
     display: flex;
     flex-direction: column;
     border-radius: 0.5rem;
-    padding: 1.5rem;
+    padding: 2.5rem;
+    margin: 1rem;
+    text-align: justify;
+    line-height: 1.2rem;
 }
 
 /* ----------- INFORMACIÓN INSTRUMENTO ----------- */
 
-.firstSteps, .firstTrack {
+.firstSteps, .instruSection {
     flex: 1;
-    margin-bottom: 2rem;
-}
-
-.firstTrack {
-    margin-left: 3rem;
 }
 
 .firstSteps li::before {
@@ -171,12 +169,12 @@ main h1 {
     margin-right: 3rem;
 }
 
-.instruSection, .videoSection {
+.firstTrack, .videoSection {
     flex: 1;
 }
 
-.instruSection p {
-    text-align: justify;
+.instruSection h2 {
+    line-height: 1.5rem;
 }
 
 /* ----------- VIDEOS RELACIONADOS ----------- */
@@ -192,7 +190,8 @@ main h1 {
 }
 
 .justVideos iframe {
-    width: 80%;
+    width: 90%;
+    height: 100%;
 }
 
 .videoButton {

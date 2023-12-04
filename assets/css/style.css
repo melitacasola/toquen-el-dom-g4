@@ -389,11 +389,13 @@ a {
         display: none;
         position: fixed;
         flex-direction: column;
-        width: 100%;
+        /* width: 100%; */
         justify-content: space-evenly;
         align-items: flex-end;
         top: 80px;
         position: absolute;
+        right: 0;
+
     }
     
     .menu.show{
@@ -404,11 +406,16 @@ a {
         background-color: var(--color-yellow);
         padding: 30px;
         font-size: 20px;
-}
-
+        margin-right: 0;
+        text-align: center;
+    }
+    .navList ul li .navHeader1{
+        text-align: center;
+    }
     .navHeader, .navHeader1 {
         background-color: var(--color-yellow);
         text-align: center;
+        margin-right: 2rem;
     }
 
     /* ------MAIN------ */
@@ -520,7 +527,7 @@ a {
         width: auto;
     }
 
-
+   
     /* ------CONSTRUCCION------ */
     .constructionMain{
         display: flex;
