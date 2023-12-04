@@ -92,164 +92,87 @@ header {
 .menuBurger {
     display: none;
 }
+/* pagina Nosotras*/
 
-/* PÁGINA HOME */
-
-.hmImage img{
-    width: 30rem;
-    height: 27rem;
-    border: 1px solid #000;
-    padding: 20px;
-    margin: 20px;
-    flex: 1;
-}
-
-.hmDescriptive {
-    /* width: 39rem; */
-    font-family: 'Solway', sans-serif;
-    flex: 1;
-    padding: 2rem;
-    width: auto;
-    
-}
-
-.hmDescriptive h1{
-    font-family: 'Oliver', sans-serif;
-    font-size: 86px;
-    flex: 1;
-}
-
-.hmDescriptive h2 {
-    font-family: 'Oliver', sans-serif;
-    font-size: 24px;
-    padding-left: 2rem;
-    flex: 1;
-}
-
-.hmDescriptive p{
-    text-align: justify;
-    margin: 2rem;
-    font-size: 24px;
-    flex: 1;
-}
-.hmText {
-    display: flex;
-    justify-content: space-between;
-    /* padding: 2rem; */
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    
-}
-
-
-/* carrusel*/
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 70%;
-    margin-left: 7rem;
-
-}
-
-.carouselContainer {
-    position: relative;
-    width: 70%;
-    overflow: hidden;
-}
-
-.carouselSlide {
-    width: 115%;
-    /* height: 50vh; */
-    display: flex;
-    justify-content: space-between;
-    gap: 2.5rem
-}
-
-.carouselSection{
-    /* width: calc(100% /4); */
-    width: 100%;
-    height: 60%;
-    object-fit: cover;
-
-
-
-}
-
-.carouselSection img {
-    width: 25rem;
-    height: 90%;
-    object-fit: cover;
-}
-
-
-.btnLeft,
-.btnRight{
-    display: flex;
-    position: absolute;
-    top: 50%;
-    font-size: 1.5rem;
-    border-radius: 50%;
-    padding: 5px;
-    background-color: transparent;
-    cursor: pointer;
-    transform: translate(0, -50%);
-    transition: .5s ease;
-    user-select: none;
-}
-
-.btnLeft{
-    left: 10px;
-}
-.btnRight{
-    right: 10px;
-}
-
-.btnLeft:hover,
-.btnRight:hover{
-    background-color: #9dadb4;
-    color: aliceblue;
-}
-
-
-
-/* ---------- página construcción --------------- */
-.constructionMain {
+.aboutDescriptive {
     text-align: center;
-    padding: 3rem;
-}
-.constructionImage img {
-    max-width: 15rem;
-    margin-left: 2.8rem;
-}
+    font-family: Solway, sans-serif;
+    padding: 4.6rem;
+    width: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
 
-.constructionDesc i{
-    margin: 1.5rem 1rem 2.5rem;
-    font-size: 7.5rem;
-    color: #ff765a;
-    margin-left: 2.8rem;
-
-}
-.constructionText h1{
-    font-family: 'Oliver', sans-serif;
+.aboutDescriptive h1 {
+    text-align: center;
     font-size: 4rem;
-    margin: 1rem;
-    
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: oliver, sans-serif;
+}
+#generalText {
+    display: flex;
+    width: 80rem;
+    height: 19rem;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.constructionText  p p{
-    margin: 2rem;
-    
+.teachers {
+    display: flex;
+    padding: 1rem 10.5rem;
+    align-items: flex-start;
+    gap: 1px;
 
 }
 
-.constructionText, .back-icon i {
+.teacher {
+        width: 200px;
+        margin: 1px;
+        position: relative;
+}
+
+.teacher img {
+    width: 100%;
     cursor: pointer;
-    margin: 0.7rem;
+    transition: opacity 0.3s;
 }
 
+.teacher p {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    text-align: center;
+}
 
+#teacher1{
+    color:#26B334
+}
+#teacher2{
+    color:#E724EB
+}
+#teacher3{
+    color:#EB5424
+}
+#teacher4{
+    color:#7A78E9
+}
+#teacher5{
+    color:#35763C
+}
+#teacher6{
+    color:#36B7B7
+}
+
+#teacher5{
+    color:#35763C
+}
+#teacher6{
+    color:#36B7B7
+}
 
 /* footer */
 footer {
@@ -292,8 +215,7 @@ a {
     justify-content: space-around;
 
 }
-
-/* --------------------- MEDIA QUERIES ---------------------- */
+/*--------------------- MEDIA QUERIES ---------------------- */
 @media screen and (max-width: 768px) {
     /* --------HEADER--------- */
 
@@ -311,7 +233,6 @@ a {
     .titleHeader {
         display: none; 
     }
-
     .menu {
         display: none;
         position: fixed;
@@ -331,7 +252,7 @@ a {
         background-color: var(--color-yellow);
         padding: 30px;
         font-size: 20px;
-}
+    }
 
     .navHeader, .navHeader1 {
         background-color: var(--color-yellow);
@@ -368,48 +289,29 @@ a {
         width: 100%;
         margin: 20px 0;
     }
-
-    /* -----CARROUSEL----- */
-    .container {
-        width: 90%;
-    }
-
-
-   
-    /* ------CONSTRUCCION------ */
-    .constructionImage img {
-        padding-bottom: 0;
-        width: 100%;
-    }
-
-    .piano, .guitarra {
-        display: none;
-    }
-    .constructionDesc {
-        margin: 0;
-    }
-
-    .constructionDesc i{
-        font-size: 40px;
-    }
-    .constructionText {
-    font-size: 1rem;
-    width: 100%;
-    text-align: center;
-
-    }
-    .constructionText h1 {
+     /* ------SOBRE NOSOTRAS------ */
+    .aboutDescriptive h1 {
         font-size: 2rem;
+        order: 0; /* El título h1 va primero */
     }
-
-    .btnBack {
-        padding: 0.3rem;
-        border-radius: 20px;
-        margin: 3rem;
+    
+    .teacher img {
+        height: 10rem;
+        width: 10rem;
+        order: 1; /* Las imágenes van después del título h1 */
+        }
+    
+    .teachers {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-
-
-    /* ------FOOTER------ */
+    
+    .teacher p {
+        text-align: center;
+        order: 2; /* Los párrafos van después de las imágenes */
+    }
+        /* ------FOOTER------ */
     .socialNetworks i{
         font-size: 15px;
 
@@ -424,3 +326,4 @@ a {
         margin-right: 0;
     }
 }
+
