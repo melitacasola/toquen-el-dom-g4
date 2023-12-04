@@ -18,9 +18,9 @@ El proyecto incluye:<br><br>
 - Flex
 - GitFlow<br><br>
 
-Marcos de trabajo Kanban y Scrum
-Ágiles
-Atomic Design
+Marcos de trabajo Kanban y Scrum<br>
+Ágiles<br>
+Atomic Design<br>
 
 **Herramientas**
 
