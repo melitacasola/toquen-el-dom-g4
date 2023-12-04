@@ -214,43 +214,66 @@ header {
 
 /* ---------- página Sobre Nosotras --------------- */
 
-.hmDescriptive.aboutUs{
-    margin: 3.5rem 3.5rem 0 3.5rem;
-    padding: 2.5rem 2.5rem 0 2.5rem;
+.hmDescriptive {
     text-align: center;
 }
-.hmDescriptive.aboutUs h1{
-    font-size: 64px;
+.hmDescriptive h1 {
+    font-family: 'Oliver', sans-serif;
+    font-size: 4rem;
 }
+#generalText {
+    text-align: justify;
+    margin: 1rem;
+    font-size: 20px;
+    flex: 1 1 0%;
+}
+
 .teachers {
     display: flex;
-    justify-content: space-around;
-    margin: 0 7rem;
-    padding: 1rem 3.5rem 3.5rem 3.5rem;
-    width: 80%;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .teacher {
-    text-align: center; 
-    /* margin: 10px; */
-    height: 100%;
-}
-
-.teacher p{
-    text-align: start;
-    font-size: 20px;
-    margin: 10px;
-    width: 90%;
-}
-
-.teacher span{
-    font-weight: 700;
+        width: 150px;
+        margin: 1px;
+        position: relative;
 }
 
 .teacher img {
-    /* width: 12rem; */
-    height: 12rem;
-    border-radius: 10%;
+    width: 100%;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.teacher p {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    text-align: center;
+}
+
+#teacher1{
+    color:#26B334
+}
+#teacher2{
+    color:#E724EB
+}
+#teacher3{
+    color:#EB5424
+}
+#teacher4{
+    color:#7A78E9
+}
+#teacher5{
+    color:#35763C
+}
+#teacher6{
+    color:#36B7B7
 }
 
 
@@ -260,30 +283,38 @@ header {
 /* ---------- página construcción --------------- */
 .constructionMain {
     text-align: center;
-    padding: 5rem;
+    padding: 3rem;
 }
 .constructionImage img {
-    max-width: 20rem;
-    padding-bottom: 4rem;
+    max-width: 15rem;
+    margin-left: 2.8rem;
 }
+
 .constructionDesc i{
-    font-size: 8rem;
-    margin: 3rem 0rem 0.5rem 0rem;
+    margin: 1.5rem 1rem 2.5rem;
+    font-size: 7.5rem;
+    color: #ff765a;
+    margin-left: 2.8rem;
+
 }
 .constructionText h1{
     font-family: 'Oliver', sans-serif;
-    font-size: 3rem;
+    font-size: 4rem;
+    margin: 1rem;
+    
 }
 
-.btnBack {
-    font-family: 'Solway', sans-serif;
-    background-color: var(--color-green-black);
-    color: white;
-    padding: 10px 30px;
-    border-radius: 20px;
-    margin: 3rem;
-    text-align: center;
+.constructionText  p p{
+    margin: 2rem;
+    
+
 }
+
+.constructionText, .back-icon i {
+    cursor: pointer;
+    margin: 0.7rem;
+}
+
 
 
 /* footer */
@@ -411,41 +442,27 @@ a {
 
 
     /* ------SOBRE NOSOTRAS------ */
-    .hmDescriptive.aboutUs{
-        margin: 2.5rem;
-        padding: 2rem;
-        /* position: fixed; */
+    .hmDescriptive.aboutUs h1 {
+        font-size: 2rem;
+        order: 0; /* El título h1 va primero */
     }
-
-    .hmDescriptive.aboutUs h1{
-        font-size: 2.5rem;
-    }
-
-    .teachers{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem;
-        margin: 1rem;
-        width: auto;
-    }
-
-    .teacher{
-        margin: 2rem 0;
-        /* padding: 2rem 0; */
-        padding: 0;
-        align-items: center;
-    }
-
-    .teacher img{
-        height: 20rem;
-    }
-
-    .teacher p{
-        text-align: justify;
-        margin: 1.5rem 0;
-        width: auto;
-    }
+    
+    .teacher img {
+        height: 10rem;
+        width: 10rem;
+        order: 1; /* Las imágenes van después del título h1 */
+        }
+    
+      .teachers {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    
+      .teacher p {
+        text-align: center;
+        order: 2; /* Los párrafos van después de las imágenes */
+      }
 
 
     /* ------CONSTRUCCION------ */
