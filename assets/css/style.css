@@ -366,14 +366,13 @@ a {
         background-color: var(--color-yellow);
         text-align: center;
     }
+
     /* ------MAIN------ */
     .hmText {
         display: flex;
         flex-direction: column;
         width: 80%;
         padding: 2rem;
-        
-
     }
 
     .hmDescriptive {
@@ -402,6 +401,13 @@ a {
     .container {
         width: 90%;
     }
+    .carouselSection img{
+        width: 20rem;
+    }
+
+    .carouselSlide{
+        width: 20rem;
+    }
 
 
     /* ------SOBRE NOSOTRAS------ */
@@ -426,7 +432,6 @@ a {
 
     .teacher{
         margin: 2rem 0;
-        /* padding: 2rem 0; */
         padding: 0;
         align-items: center;
     }
