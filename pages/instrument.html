@@ -8,12 +8,11 @@
     <link rel="stylesheet" href="../assets/css/instrument.css">
     <link rel="stylesheet" href="../assets/css/tubes.css">
 
-    <link rel="icon" href="./assets/img/google-logo.png" type="image/png">
-    <link rel="icon" href="./assets/img/google-logo.png" type="image/png">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js">
     </script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 </head>
 <body>
     <header>
@@ -48,8 +47,8 @@
             <div class="panfluteSet">
                 <div class="panflute">
                     <ul class="panfluteTubes">
-                        <li class="tube one" data-key="a"></li>
-                        <li class="tube two" data-key="w"></li>
+                        <li class="tube one" data-key="SOL"><audio id="SOL" src="../assets/audio/01_A.wav"></audio></li>
+                        <li class="tube two" data-key="LA"><audio id="LA" src="../assets/audio/02_W.wav"></audio></li>
                         <li class="tube three" data-key="s"></li>
                         <li class="tube four" data-key="e"></li>
                         <li class="tube five" data-key="d"></li>
@@ -69,7 +68,7 @@
                 <div class="panfluteBox">
                     <div class="notesBox">
                         <ul class="notesBox-text">
-                            <li>SOL</li>
+                            <li><audio></audio>SOL</li> 
                             <li>LA</li>
                             <li>SI</li>
                             <li>DO</li>
@@ -102,7 +101,7 @@
                             <li>H</li>
                             <li>U</li>
                             <li>J</li>
-                            <li>I</li>
+                            <li>I<A/li>
                             <li>K</li>
                         </ul>
                         <div class="rectangleBottom"></div>
@@ -113,18 +112,27 @@
 
         <!-- ------------- INFORMACIÓN ADICIONAL ------------- -->
         <div class="info">
-            <section class="firstSection">
-                <h2>Primeros pasos</h2>
-                <br>
-                <p>Para poder tocar la flauta de pan virtualmente se deberian seguir como primeros pasos:</p>
-                <br>
-                <ul>
-                    <li>Leer las instrucciones de la aplicación.</li>
-                    <li>Seleccionar el modo de juego que prefieras, ya sea usando el teclado o el ratón.</li>
-                    <li>Ajustar el volumen de tu computadora antes de jugar con la flauta de pan.</li>
-                    <li>Practicar con la aplicación web, siguiendo las lecciones, y los ejercicios.</li>
-                </ul>
-            </section>
+            <div class="firstSection">
+                <section class="firstSteps">
+                    <h2>Primeros pasos</h2>
+                    <br>
+                    <p>Para poder tocar la flauta de pan virtualmente se deberian seguir como primeros pasos:
+                    <br>
+                    <ul>
+                        <li>Leer las instrucciones de la aplicación.</li>
+                        <li>Seleccionar el modo de juego que prefieras, ya sea usando el teclado o el ratón.</li>
+                        <li>Ajustar el volumen de tu computadora antes de jugar con la flauta de pan.</li>
+                        <li>Practicar con la aplicación web, siguiendo las lecciones, y los ejercicios.</li>
+                    </ul></p>
+                </section>
+                <section class="firstTrack">
+                    <h2>¡Toca tu primera canción!</h2>
+                    <br>
+                    <p>Lorem Ipsum </p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque orci ligula, ultrices sit amet nisi nec, aliquet vestibulum dui. Pellentesque et vulputate justo. Morbi egestas purus vel nisi commodo vehicula. Aenean congue ac massa eget fermentum. Nam ultricies quam at elit rhoncus condimentum. Nam luctus lacus id pharetra scelerisque. Quisque egestas lectus quis vulputate vehicula. Donec feugiat nisl ultricies dui gravida, et imperdiet risus semper. Morbi tempus ultrices nibh, vitae tempus orci tempus sit amet. Duis at orci vel risus tempus elementum. Etiam eget dictum quam. Donec eu consequat lectus, ut feugiat eros. Pellentesque commodo id dolor at volutpat.</p>
+                </section>
+            </div>
     
             <div class="secondSection">
                 <!-- ------------- INFO INSTRUMENTO ------------- -->
@@ -137,7 +145,7 @@
                 </section>
 
                 <!-- ------------- VIDEOS RELACIONADOS ------------- -->
-                <section class="videoSection">
+               <section class="videoSection">
                     <h3>Videos relacionados</h3>
                     <br>
                     <div class="justVideos">
@@ -172,5 +180,6 @@
             <p><a href="#"> Correo electrónico</a></p>
         </div>
     </footer>
+    <script src="../assets/js/sounds.js"></script>
 </body>
 </html>
