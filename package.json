@@ -1,12 +1,26 @@
 {
-  "devDependencies": {
-    "vitest": "^0.34.6"
-  },
+  "name": "toquen-el-dom-g4",
+  "description": "**¿Quiénes somos?** Bienvenido al repositorio Toquen el DOM, el lugar para integrarse dentro de la plataforma musical que te sumerge en la experiencia de un instrumento único. Aprende nuevos instrumentos de manera didáctica y online, gracias a nuestros tutoriales de gran fácilidad y descubre los emocionantes instrumentos que estamos construyendo para el futuro. ¡Conoce al equipo detrás de Toquen el Dom y descubre nuestra pasión por la música!<br><br>",
+  "version": "1.0.0",
+  "main": "vite.config.js",
+
   "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "test": "vitest"
   },
   "type": "module",
   "dependencies": {
     "play-sound": "^1.1.6"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@testing-library/dom": "^9.3.3",
+    "@testing-library/jest-dom": "^6.1.5",
+    "jsdom": "^23.0.1",
+    "vite": "^5.0.5",
+    "vitest": "^0.34.6"
   }
 }
