@@ -19,7 +19,7 @@ test('sounds.js - la funcion handleKeyPress deberia existir', () => {
 });
 
 test('En el archivo sounds.js existe la funcion handleTubeTouchStart ', () => {
-    expect(handleTubeTouchStart).to.be.a('function');
+    expect(handleTubeTouchStart).to.be.a('function')
 });
 
 
