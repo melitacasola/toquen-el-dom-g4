@@ -6,7 +6,7 @@ describe("Configuracion de test", () => {
   
       // lectura de nuestro html
     beforeAll(async () => {
-      dom = await JSDOM.fromFile("home.html", {
+      dom = await JSDOM.fromFile("index.html", {
         resources: "usable",
         runScripts: "dangerously",
       })
